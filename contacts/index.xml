@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact Us on UIC-STAT HPC</title>
-    <link>/contacts/</link>
+    <link>uicstat.com/contacts/</link>
     <description>Recent content in Contact Us on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/contacts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="uicstat.com/contacts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Email</title>
-      <link>/contacts/email/</link>
+      <link>uicstat.com/contacts/email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contacts/email/</guid>
+      <guid>uicstat.com/contacts/email/</guid>
       <description> Want to leave a comment or join us: bayes@uicstat.com Want to cooperate with us: bayes@uicstat.comReport bug for the system: issues@uicstat.com  </description>
     </item>
     
     <item>
       <title>GitHub Organization</title>
-      <link>/contacts/github/</link>
+      <link>uicstat.com/contacts/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contacts/github/</guid>
+      <guid>uicstat.com/contacts/github/</guid>
       <description> : Bayes-Cluster </description>
     </item>
     

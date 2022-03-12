@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on UIC-STAT HPC</title>
-    <link>/document/software/</link>
+    <link>uicstat.com/document/software/</link>
     <description>Recent content in Software on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/document/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="uicstat.com/document/software/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
