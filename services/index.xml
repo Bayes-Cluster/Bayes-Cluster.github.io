@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on UIC-STAT HPC</title>
-    <link>uicstat.com/services/</link>
+    <link>/services/</link>
     <description>Recent content in Services on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="uicstat.com/services/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/services/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tutorial of Research Computing</title>
-      <link>uicstat.com/services/tutorial/</link>
+      <link>/services/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>uicstat.com/services/tutorial/</guid>
+      <guid>/services/tutorial/</guid>
       <description>Tutorial for Research Computing The tutorial is an sharing event organized by USBC, and all UIC students, faculty are welcome to attend. In general, the tutorial will share about the technique that can be used your daily usage of computer and USBC, usually focusing on:
  Shell Tools, Scripting and Command-Linear Environment Editors Version Control (Git) File System and Security  For more information, please contact bayes@uicstat.com</description>
     </item>
     
     <item>
       <title>Workshops &amp; Live Training</title>
-      <link>uicstat.com/services/workshop/</link>
+      <link>/services/workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>uicstat.com/services/workshop/</guid>
+      <guid>/services/workshop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Supported Software</title>
-      <link>uicstat.com/services/software/</link>
+      <link>/services/software/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>uicstat.com/services/software/</guid>
+      <guid>/services/software/</guid>
       <description>We provide programming and configuration support for High Performance Computing software. Our services include:
  Software installation (Licensed or Open-source) Troubleshooting malfunctioning programs Developing new parallel codes Parallelizing existing serial codes  We support several implementations of MPI, OpenMP and MATLAB Parallelization.
 Software List Compiler   Software Synopsis Version     GCC The GNU Compiler Collectiong 7.3   OpenMPI A Message Passing Interface Library 4.1   OpenMP An application programming interface for multiprocessing programming 5.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on UIC-STAT HPC</title>
-    <link>uicstat.com/projects/</link>
+    <link>/projects/</link>
     <description>Recent content in Projects on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="uicstat.com/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CodeHub - Generation II</title>
-      <link>uicstat.com/projects/codehubgen2/</link>
+      <link>/projects/codehubgen2/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0800</pubDate>
       
-      <guid>uicstat.com/projects/codehubgen2/</guid>
+      <guid>/projects/codehubgen2/</guid>
       <description>CodeHub Gen II Develop with Codespace
 Tech Stack  Frontend: Bootstrap5  Data Dashboard: bokeh Editor: Manacco Editor Web Terminal: Xterm.js   Backend: Flask Database: MariaDB  Components Basically, the Code-Hub has(will have) these three main components:
  User Management: Authentication, Authorization and Questioning System  account application form collection Single Sign ON (OpenLDAP + JWT) Time-based One-Time Password Ticket System   System Security Cluster Status and User (danger operation) Monitoring  Server current usage and historical usage - (optional: netdata) Auditing (Asciinema) Auto Blocking (Crypto-mining and etc.</description>
