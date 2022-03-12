@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on UIC-STAT HPC</title>
+    <link>/services/</link>
+    <description>Recent content in Services on UIC-STAT HPC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Nov 2018 20:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/services/tutorial/</link>
+      <pubDate>Sun, 11 Nov 2018 20:00:00 +0800</pubDate>
+      
+      <guid>/services/tutorial/</guid>
+      <description>Topic: Collaborating and Converging
+Speaker: Terence Lau (STAT Year 3)
+Location: T8-306 (BNU-HKBU UIC)
+Time: 2018.11.11 20:00-21:00
+Resources: Slide (This slide is made with reveal.js, please download the whole folder and open the index.html to start.)</description>
+    </item>
+    
+  </channel>
+</rss>

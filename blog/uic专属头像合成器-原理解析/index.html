@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>UIC专属头像合成器 · 原理解析 | UIC-STAT HPC</title>
+    
+    <link rel="icon" href="/img/favicon.ico">
+
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    
+
+    
+    <link href="/css/syntax.css" rel="stylesheet">
+
+    
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <a name="top"></a><nav class="nav-container navbar navbar-expand-md navbar-dark fixed-top marginNavBar" id="navBar">
+  <div class="container">
+    <div style="visibility: hidden">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <img class="navbar-icon mx-auto" src="/img/usbc.png" style="max-height: 40px;">
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse nav-text-padding" id="navbarCollapse">
+      <ul class="navbar-nav">
+        
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              
+              <span>Home</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/systems/">
+              
+              <span>Systems</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/services/">
+              
+              <span>Services</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/projects/">
+              
+              <span>Projects</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/events/">
+              
+              <span>Events</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="https://uicstat.com/wiki">
+              
+              <span>Documents</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/about/">
+              
+              <span>About</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/contacts/">
+              
+              <span>Contact Us</span>
+              
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="featureCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url(https://i.loli.net/2018/01/12/5a5851e72c7c2.jpg);">
+        <img class="first-slide" src="https://i.loli.net/2018/01/12/5a5851e72c7c2.jpg" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption carousel-caption-dark carousel-caption-dark d-none d-block text-left">
+            <h1>UIC专属头像合成器 · 原理解析</h1>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<link href="/css/blog-style.css" rel="stylesheet">
+
+        <div class="container marketing"><div id="content">
+
+  <main>
+      
+      <p class="mb-3">December 7, 2016 | by: 高超</p>
+      <p>这是一个网页，涉及到的语言是 HTML, CSS 和 JavaScript (JS)，使用到的 JS 框架是 jQuery。用到的主要 HTML 元素是 Canvas (画布)，主要的 JS 类是 FileReader。下面主要讲一下 JS 里面的功能代码。</p>
+<p>原理是使用画布进行“ps”，获取上传的图片之后，给画布填充白色背景颜色，然后将图片按照指定比例缩小并画在画布上面，此时的图片内容缩小后的头像，最后将 logo 图片画在右上角，即可完成 UIC logo 专属头像的合成。</p>
+<p>首先，新建一个画布。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">cresateElement</span>(<span style="color:#e6db74">&#34;canvas&#34;</span>);
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ctx</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">getContext</span>(<span style="color:#e6db74">&#34;2d&#34;</span>);
+<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">wid</span>;
+<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">wid</span>;
+<span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillStyle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;white&#34;</span>; <span style="color:#75715e">// 将画布的填充颜色设置为白色，之后填充背景颜色时会用到
+</span></code></pre></div><p>wid 是画布的默认宽度，也就是图片的宽度。然后我们将</p>
+<p><img src="https://ooo.0o0.ooo/2017/06/17/5944fbb4bfe22.jpg" alt=""></p>
+<p>（由于图片格式是 png，故底色呈现为黑色。）</p>
+<p>这个图片的地址存下来，以遍之后使用。这里我们把他存在数组 <code>data1[]</code> 中，我们可以通过 <code>data1[0]</code> 来获取这个图片的地址，数据格式是 <code>string</code>。</p>
+<p>另外，我们需要<code>&lt;input type=&quot;file&quot; accept=&quot;image/*&quot; id=&quot;uic&quot;&gt;</code>标签实现本地文件上传功能。对应的 JS 代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#uic&#34;</span>).<span style="color:#a6e22e">change</span>(<span style="color:#66d9ef">function</span>() {
+ <span style="color:#75715e">// 点击上传图片被调用，也就是点击上传图片之后这里面的代码会被运行
+</span><span style="color:#75715e"></span> <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fill</span>(); <span style="color:#75715e">// 填充背景颜色，颜色是白色
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">furl</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#uic&#34;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">files</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// 获取上传的图片的 URL
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">file</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FileReader</span>();
+  <span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">readAsDataURL</span>(<span style="color:#a6e22e">furl</span>); <span style="color:#75715e">// 开始读取图片文件对象的内容
+</span><span style="color:#75715e"></span> <span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>){ <span style="color:#75715e">// 上传的图片加载成功后被调用
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">img</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Image</span>();
+   <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">result</span>; <span style="color:#75715e">// 将上传的图片的地址赋值给 img 对象
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+      <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">drawImage</span>(<span style="color:#66d9ef">this</span>, <span style="color:#ae81ff">78</span>, <span style="color:#ae81ff">120</span>, <span style="color:#a6e22e">wid</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">200</span>, <span style="color:#a6e22e">wid</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">190</span>);
+      <span style="color:#75715e">// 将自己上传的图片缩小并画到画布上，也就是小头像，
+</span><span style="color:#75715e"></span>      <span style="color:#75715e">//78是小头像的左边距，120是上边距，(wid - 200)是小图片的宽度，
+</span><span style="color:#75715e"></span>      <span style="color:#75715e">//(wid - 190)是小图片的高度，单位是 pixel 即像素。
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">img</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Image</span>();
+      <span style="color:#a6e22e">img</span>.<span style="color:#a6e22e">src</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">data1</span>[<span style="color:#ae81ff">0</span>]; <span style="color:#75715e">// 将 UIC logo 图片的地址并赋值
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">drawImage</span>(<span style="color:#a6e22e">img</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">wid</span>, <span style="color:#a6e22e">wid</span>); <span style="color:#75715e">// 将 UIC logo 画到画布上
+</span><span style="color:#75715e"></span>     <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#imgBox&#39;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">toDataURL</span>(<span style="color:#e6db74">&#34;image/jpeg&#34;</span>));
+     <span style="color:#75715e">// imgBox 是&lt;img&gt;图片标签的 id，
+</span><span style="color:#75715e"></span>     <span style="color:#75715e">//我们将画布的内容转换成 jpeg
+</span><span style="color:#75715e"></span>     <span style="color:#a6e22e">格式的图片并将其显示到</span> <span style="color:#a6e22e">id</span> <span style="color:#a6e22e">为</span> <span style="color:#a6e22e">imgBox</span> <span style="color:#a6e22e">的</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">img</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">标签中</span><span style="color:#960050;background-color:#1e0010">。</span>
+    }
+};
+</code></pre></div><p>问：你的源代码我可以看到吗？
+可以。</p>
+<p><img src="https://ooo.0o0.ooo/2017/06/17/5944fbb4bea9c.jpg" alt=""></p>
+<p>如图，点击“复制链接”，然后将链接发送到微信的电脑端，使用迅雷或其他下载工具新建任务，地址就是这个复制好的链接。下载到后是一个 HTML 文件，可以选择用记事本等工具打开。如果没有下载工具，将地址输入到浏览器。进入到网页后，</p>
+<p>点击“检查元素”，即可查看到源代码。</p>
+
+      
+  </main>
+  <div class="row mt-5">
+    
+    <div class="col-6">
+        <div class="card border-info">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 mt-1 text-muted">Previous：</h6>
+              <h2 class="card-title">UIC专属头像合成器</h5>
+              <p class="card-text"></p>
+              <a href="/blog/uic%E4%B8%93%E5%B1%9E%E5%A4%B4%E5%83%8F%E5%90%88%E6%88%90%E5%99%A8/" class="stretched-link">Read the post</a>
+            </div>
+          </div>
+    </div>
+    
+    
+    <div class="col-6">
+        <div class="card border-success">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 mt-1 text-muted">Next：</h6>
+              <h2 class="card-title">【IT】期末复习资料</h5>
+              <p class="card-text"></p>
+              <a href="/blog/it%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%B5%84%E6%96%99/" class="stretched-link">Read the post</a>
+            </div>
+          </div>
+    </div>
+    
+  </div>
+  
+
+        </div><hr class="featurette-divider">
+<center>
+  <p>This service is run transparently from <a href="https://github.com/Bayes-Cluster">Bayes-Cluster</a> on <a href="github.com">GitHub</a></p>
+  <p>Copyright &copy; 2018-<script>document.write(new Date().getFullYear())</script> <a href="https://github.com/Bayes-Cluster">Bayes Cluster Mantenance Group</a></p>
+</center></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+<script src="/js/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script></body>
+</html>

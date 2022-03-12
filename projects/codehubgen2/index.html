@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>CodeHub - Generation 2 | UIC-STAT HPC</title>
+    
+    <link rel="icon" href="/img/favicon.ico">
+
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    
+
+    
+    <link href="/css/syntax.css" rel="stylesheet">
+
+    
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <a name="top"></a><nav class="nav-container navbar navbar-expand-md navbar-dark fixed-top marginNavBar" id="navBar">
+  <div class="container">
+    <div style="visibility: hidden">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <img class="navbar-icon mx-auto" src="/img/usbc.png" style="max-height: 40px;">
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse nav-text-padding" id="navbarCollapse">
+      <ul class="navbar-nav">
+        
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              
+              <span>Home</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/systems/">
+              
+              <span>Systems</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/services/">
+              
+              <span>Services</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/projects/">
+              
+              <span>Projects</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/events/">
+              
+              <span>Events</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="https://uicstat.com/wiki">
+              
+              <span>Documents</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/about/">
+              
+              <span>About</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/contacts/">
+              
+              <span>Contact Us</span>
+              
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="featureCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url(https://i.loli.net/2017/09/11/59b6a89a479a9.jpg);">
+        <img class="first-slide" src="https://i.loli.net/2017/09/11/59b6a89a479a9.jpg" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption carousel-caption-dark carousel-caption-dark d-none d-block text-left">
+            <h1>CodeHub - Generation 2</h1>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<link href="/css/blog-style.css" rel="stylesheet">
+
+        <div class="container marketing"><div id="content">
+
+  <main>
+      
+      <p class="mb-3">March 12, 2022 | by: Terence Junjie LIU</p>
+      <h1 id="code-hub-gen2">Code-Hub-Gen2</h1>
+<p><img src="https://img.shields.io/badge/python-v3.7.11-orange" alt="python-version">
+<img src="https://img.shields.io/badge/Flask-v2.0.1-green" alt="flask">
+<img src="https://img.shields.io/badge/Werkzeug-v2.0.1-blue" alt="Werkzeug">
+<img src="https://img.shields.io/badge/MariaDB-v10.3.32-brightgreen" alt="MariaDB"></p>
+<p><em>Develop with Codespace</em></p>
+<h2 id="tech-stack">Tech Stack</h2>
+<ul>
+<li>Frontend: <a href="https://getbootstrap.com/">Bootstrap5</a>
+<ul>
+<li>Data Dashboard: <a href="https://docs.bokeh.org/en/2.4.1/index.html">bokeh</a></li>
+<li>Editor: <a href="https://microsoft.github.io/monaco-editor/">Manacco Editor</a></li>
+<li>Web Terminal: <a href="https://xtermjs.org/">Xterm.js</a></li>
+</ul>
+</li>
+<li>Backend: <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a></li>
+<li>Database: <a href="https://mariadb.org/">MariaDB</a></li>
+</ul>
+<h2 id="components">Components</h2>
+<p>Basically, the Code-Hub has(will have) these three main components:</p>
+<ol>
+<li>User Management: Authentication, Authorization and Questioning System
+<ol>
+<li><em>account application form</em> collection</li>
+<li>Single Sign ON (OpenLDAP + JWT)</li>
+<li>Time-based One-Time Password</li>
+<li>Ticket System</li>
+</ol>
+</li>
+<li>System Security Cluster Status and User (danger operation) Monitoring
+<ol>
+<li>Server current usage and historical usage - (optional: <a href="https://www.netdata.cloud/">netdata</a>)</li>
+<li>Auditing (<a href="https://asciinema.org/">Asciinema</a>)</li>
+<li>Auto Blocking (Crypto-mining and etc.)</li>
+</ol>
+</li>
+<li>Web-based Coding Interface
+<ol>
+<li>Web Terminal (<a href="https://xtermjs.org/">Xterm.js</a> with <code>socketio</code>) - optional</li>
+<li>Files Management (simple upload + download)</li>
+<li>Proxy Service (for <code>code-server</code>, <code>MATLAB</code>, <code>RStudio</code>, and etc.)</li>
+</ol>
+</li>
+</ol>
+
+      <div class="text-center">
+            <hr class="featurette-divider">
+            <h4>Related Resource(s)</h4>
+            
+            
+            <a class="btn btn-lg btn-outline-success" href="https://github.com/Bayes-Cluster/Code-Hub-Gen2" role="button">GitHub</a>
+            
+      </div>
+  </main>
+
+        </div><hr class="featurette-divider">
+<center>
+  <p>This service is run transparently from <a href="https://github.com/Bayes-Cluster">Bayes-Cluster</a> on <a href="github.com">GitHub</a></p>
+  <p>Copyright &copy; 2018-<script>document.write(new Date().getFullYear())</script> <a href="https://github.com/Bayes-Cluster">Bayes Cluster Mantenance Group</a></p>
+</center></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+<script src="/js/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script></body>
+</html>
