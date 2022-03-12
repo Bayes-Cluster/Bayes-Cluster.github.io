@@ -6,22 +6,38 @@
     <description>Recent content in Services on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Nov 2018 20:00:00 +0800</lastBuildDate>
     
 	<atom:link href="/services/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Tutorial</title>
+      <title>Tutorial of Research Computing</title>
       <link>/services/tutorial/</link>
-      <pubDate>Sun, 11 Nov 2018 20:00:00 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/services/tutorial/</guid>
-      <description>Topic: Collaborating and Converging
-Speaker: Terence Lau (STAT Year 3)
-Location: T8-306 (BNU-HKBU UIC)
-Time: 2018.11.11 20:00-21:00
-Resources: Slide (This slide is made with reveal.js, please download the whole folder and open the index.html to start.)</description>
+      <description>Tutorial for Research Computing The tutorial is an sharing event organized by USBC, and all UIC students, faculty are welcome to attend. In general, the tutorial will share about the technique that can be used your daily usage of computer and USBC, usually focusing on:
+ Shell Tools, Scripting and Command-Linear Environment Editors Version Control (Git) File System and Security  For more information, please contact bayes@uicstat.com</description>
+    </item>
+    
+    <item>
+      <title>Workshops &amp; Live Training</title>
+      <link>/services/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/workshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supported Software</title>
+      <link>/services/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/software/</guid>
+      <description>We provide programming and configuration support for High Performance Computing software. Our services include:
+ Software installation (Licensed or Open-source) Troubleshooting malfunctioning programs Developing new parallel codes Parallelizing existing serial codes  We support several implementations of MPI, OpenMP and MATLAB Parallelization.
+Software List Compiler   Software Synopsis Version     GCC The GNU Compiler Collectiong 7.3   OpenMPI A Message Passing Interface Library 4.1   OpenMP An application programming interface for multiprocessing programming 5.</description>
     </item>
     
   </channel>

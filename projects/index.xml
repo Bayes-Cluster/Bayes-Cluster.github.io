@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>CodeHub - Generation 2</title>
+      <title>CodeHub - Generation II</title>
       <link>/projects/codehubgen2/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0800</pubDate>
       
       <guid>/projects/codehubgen2/</guid>
-      <description>Code-Hub-Gen2 Develop with Codespace
+      <description>CodeHub Gen II Develop with Codespace
 Tech Stack  Frontend: Bootstrap5  Data Dashboard: bokeh Editor: Manacco Editor Web Terminal: Xterm.js   Backend: Flask Database: MariaDB  Components Basically, the Code-Hub has(will have) these three main components:
  User Management: Authentication, Authorization and Questioning System  account application form collection Single Sign ON (OpenLDAP + JWT) Time-based One-Time Password Ticket System   System Security Cluster Status and User (danger operation) Monitoring  Server current usage and historical usage - (optional: netdata) Auditing (Asciinema) Auto Blocking (Crypto-mining and etc.</description>
     </item>

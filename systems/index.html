@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>Systems | UIC-STAT HPC</title>
+    
+    <link rel="icon" href="/img/favicon.ico">
+
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    
+
+    
+    <link href="/css/syntax.css" rel="stylesheet">
+
+    
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <a name="top"></a><nav class="nav-container navbar navbar-expand-md navbar-dark fixed-top marginNavBar" id="navBar">
+  <div class="container">
+    <div style="visibility: hidden">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <img class="navbar-icon mx-auto" src="/img/usbc.png" style="max-height: 40px;">
+    <div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse nav-text-padding" id="navbarCollapse">
+      <ul class="navbar-nav">
+        
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              
+              <span>Home</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item active">
+            <a class="nav-link" href="/systems/">
+              
+              <span>Systems</span>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/services/">
+              
+              <span>Services</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/projects/">
+              
+              <span>Projects</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/events/">
+              
+              <span>Events</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/document/">
+              
+              <span>Document</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/about/">
+              
+              <span>About</span>
+              
+            </a>
+          </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link" href="/contacts/">
+              
+              <span>Contact Us</span>
+              
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="featureCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url(https://dst.uic.edu.cn/stat/images/research.jpeg);">
+        <img class="first-slide" src="https://dst.uic.edu.cn/stat/images/research.jpeg" alt="First slide">
+        <div class="container">
+          <div class="carousel-caption carousel-caption-dark carousel-caption-dark d-none d-block text-left">
+            <h1>Systems</h1>
+            <p>A brief introduction on our system and Architecture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="container marketing"><div id="content">
+  <main>
+      <h2 id="overview">Overview</h2>
+<p>The Bayes cluster is intended for running smaller jobs, as well as developing, debugging, and testing codes. It is a self-built and hosted  beowulf cluster. Each compute node has 20 cores 2.20 GHz Intel Skylake CPU-cores and 256 GB RAM. There are also two nodes with GPUs (NVIDIA-P100). For more details see the Hardware Configuration section below.</p>
+
+
+
+
+
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+<th>NodeName</th>
+<th>CPU</th>
+<th>Memory</th>
+<th>GPU</th>
+<th>Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Control</td>
+<td>20 cores</td>
+<td>128GB</td>
+<td>NA</td>
+<td>240GB</td>
+</tr>
+<tr>
+<td>Compute2030005000</td>
+<td>20 cores</td>
+<td>128GB</td>
+<td>NA</td>
+<td>600GB</td>
+</tr>
+<tr>
+<td>Compute2030005001</td>
+<td>20 cores</td>
+<td>128GB</td>
+<td>NA</td>
+<td>3.0 TB</td>
+</tr>
+<tr>
+<td>Compute2030005002</td>
+<td>20 cores</td>
+<td>128GB</td>
+<td>Tesla P100 12GB</td>
+<td>4.8TB</td>
+</tr>
+<tr>
+<td>Compute2030005003</td>
+<td>20 cores</td>
+<td>128GB</td>
+<td>Tesla P100 12GB</td>
+<td>4.8TB</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="how-to-access-the-bayes-cluster">How to Access the Bayes Cluster</h2>
+<p>You have to request an account before using the Bayes cluster, and then log in through SSH.</p>
+<ol>
+<li>Requesting Access to Bayes: if you would like an account on Bayes, please fill out the <a href="https://baidu.com" style="text-decoration: none;">Application</a> for to request an account</li>
+<li>Logging into Bayes: <code style="color: gray">ssh &lt;user_name&gt;@hpc.uicstat.com</code></li>
+</ol>
+<h2 id="how-to-work-on-the-bayes-cluster">How to work on the Bayes Cluster</h2>
+<p>Since Bayes Cluster is runing a Linux system, knowing some basic Linux commands is hightly recommended. For an introduction to navigating a Linux system, here are some reference:</p>
+<ul>
+<li><a href="https://training.linuxfoundation.org/training/introduction-to-linux/">Introduction to Linux</a> | by Linux Foundatation</li>
+<li><a href="https://github.com/uschpc/workshop-intro-linux">Introduction to Linux and Command Line</a> | by USC-HPC</li>
+</ul>
+<p>Then, please read our <a href="/document/introduction/">guideline of the Bayes cluster</a> to know more about the file systems, module system, and scheduling system running on Bayes cluster.</p>
+<h2 id="notice">Notice</h2>
+<p>The control node on Bayes should be used for the basic usage (log in, submit your job, file transfer, and etc.) only. <strong>No jobs should be run on the control node</strong>, other than brief tests that last no more than a few minutes.</p>
+
+          <ul class="contents">
+          
+          </ul>
+  </main>
+
+        </div><hr class="featurette-divider">
+<center>
+  <p>This service is run transparently from <a href="https://github.com/Bayes-Cluster">Bayes-Cluster</a> on <a href="github.com">GitHub</a></p>
+  <p>Copyright &copy; 2018-<script>document.write(new Date().getFullYear())</script> <a href="https://github.com/Bayes-Cluster">Bayes Cluster Mantenance Group</a></p>
+</center></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+<script src="/js/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script></body>
+</html>

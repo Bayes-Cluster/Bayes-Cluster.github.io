@@ -12,12 +12,51 @@
     
     
     <item>
-      <title>CodeHub - Generation 2</title>
+      <title>Get Started Guide</title>
+      <link>/document/introduction/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/document/introduction/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial of Research Computing</title>
+      <link>/services/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/tutorial/</guid>
+      <description>Tutorial for Research Computing The tutorial is an sharing event organized by USBC, and all UIC students, faculty are welcome to attend. In general, the tutorial will share about the technique that can be used your daily usage of computer and USBC, usually focusing on:
+ Shell Tools, Scripting and Command-Linear Environment Editors Version Control (Git) File System and Security  For more information, please contact bayes@uicstat.com</description>
+    </item>
+    
+    <item>
+      <title>Workshops &amp; Live Training</title>
+      <link>/services/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/workshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supported Software</title>
+      <link>/services/software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/software/</guid>
+      <description>We provide programming and configuration support for High Performance Computing software. Our services include:
+ Software installation (Licensed or Open-source) Troubleshooting malfunctioning programs Developing new parallel codes Parallelizing existing serial codes  We support several implementations of MPI, OpenMP and MATLAB Parallelization.
+Software List Compiler   Software Synopsis Version     GCC The GNU Compiler Collectiong 7.3   OpenMPI A Message Passing Interface Library 4.1   OpenMP An application programming interface for multiprocessing programming 5.</description>
+    </item>
+    
+    <item>
+      <title>CodeHub - Generation II</title>
       <link>/projects/codehubgen2/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0800</pubDate>
       
       <guid>/projects/codehubgen2/</guid>
-      <description>Code-Hub-Gen2 Develop with Codespace
+      <description>CodeHub Gen II Develop with Codespace
 Tech Stack  Frontend: Bootstrap5  Data Dashboard: bokeh Editor: Manacco Editor Web Terminal: Xterm.js   Backend: Flask Database: MariaDB  Components Basically, the Code-Hub has(will have) these three main components:
  User Management: Authentication, Authorization and Questioning System  account application form collection Single Sign ON (OpenLDAP + JWT) Time-based One-Time Password Ticket System   System Security Cluster Status and User (danger operation) Monitoring  Server current usage and historical usage - (optional: netdata) Auditing (Asciinema) Auto Blocking (Crypto-mining and etc.</description>
     </item>
@@ -159,19 +198,6 @@ Resources: Slide (This slide is made with reveal.js, please download the whole f
     </item>
     
     <item>
-      <title>Tutorial</title>
-      <link>/services/tutorial/</link>
-      <pubDate>Sun, 11 Nov 2018 20:00:00 +0800</pubDate>
-      
-      <guid>/services/tutorial/</guid>
-      <description>Topic: Collaborating and Converging
-Speaker: Terence Lau (STAT Year 3)
-Location: T8-306 (BNU-HKBU UIC)
-Time: 2018.11.11 20:00-21:00
-Resources: Slide (This slide is made with reveal.js, please download the whole folder and open the index.html to start.)</description>
-    </item>
-    
-    <item>
       <title>Speaking of Storage Devices - By Wang Qizheng</title>
       <link>/events/2018-1111-wqz-speakingofstoragedevices/</link>
       <pubDate>Sun, 11 Nov 2018 19:00:00 +0800</pubDate>
@@ -229,18 +255,6 @@ The provided .md file is a mdp file. You may use it to play the slides.</descrip
       
       <guid>/contacts/github/</guid>
       <description> : Bayes-Cluster </description>
-    </item>
-    
-    <item>
-      <title>Latest Publication</title>
-      <link>/publication/publication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/publication/</guid>
-      <description>Construction of symmetric orthogonal designs with deep Q-network and orthogonal complementary design
-Jianfa Lai, Linchen Weng, Xiaoling Peng &amp; Kai-Tai Fang
-A variant RSA acceleration with parallelisation
-Jun-Jie Liu, Kang-Too Tsang &amp; Yu-Hui Deng</description>
     </item>
     
   </channel>
