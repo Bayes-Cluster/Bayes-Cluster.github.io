@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.92.2" />
+<link rel="canonical" type="text/html" href="/docs/getting-started/">
+<link rel="alternate" type="application/rss&#43;xml" href="/docs/getting-started/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Getting Started | UIC-STAT HPC</title>
+<meta name="description" content="What does your user need to know to try your project?
+">
+<meta property="og:title" content="Getting Started" />
+<meta property="og:description" content="What does your user need to know to try your project?
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/docs/getting-started/" /><meta property="og:site_name" content="UIC-STAT HPC" />
+
+<meta itemprop="name" content="Getting Started">
+<meta itemprop="description" content="What does your user need to know to try your project?
+"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting Started"/>
+<meta name="twitter:description" content="What does your user need to know to try your project?
+"/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css" as="style">
+<link href="/scss/main.min.704093cd1a56f37fd00dc35c7125fced09d88d60c92d59965b30c8c0eeef1cd5.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-00000000-0', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">UIC-STAT HPC</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/systems/" ><span>Systems</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/services/" ><span>Services</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/research/" ><span>Research</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/blog/" ><span>Blog</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs/" ><span class="active">Documentation</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/community/" ><span>Community</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block"><input type="search" class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete="off">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href="#" onclick="print();return false;">Click here to print</a>.
+</p><p>
+<a href="/docs/getting-started/">Return to the regular view of this page</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Getting Started</h1>
+<div class="lead">What does your user need to know to try your project?</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-084070bab5e87ea5776eec16cd113b98">Quick Start</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-b527a80c7429d4d76cd74501926e3746">Access to the Cluster</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-ed47a231092ff2e96f199c961f3930ea">Environment Module</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-e1a7e763d6914ddf240b4d2aaca22927">Interactive Tasks</a></li>
+
+
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-538646455b025abcf902cacf830bb205">Batch Tasks</a></li>
+
+
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-4ee4a1073a51ffc6b5fb6bb536540891">Software Installation</a></li>
+
+
+    
+  
+    
+    
+	
+<li>7: <a href="#pg-628f6e29ce838d768d6a8a578940d243">File Transfer</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-084070bab5e87ea5776eec16cd113b98">1 - Quick Start</h1>
+    
+	<h2 id="quick-start">Quick Start</h2>
+<p>After reading the introduction of USBC, you may have interest in running your first program on it. Steps are as follows: Apply for an account. Log in the Cluster (set up <a href="https://itsc.uic.edu.cn/">campus VPN service</a> connection if you are off-campus). Upload your program source code. Prepare a SLURM script to run your program. Submit your program running task to the Cluster.</p>
+<h2 id="request-for-an-account">Request for an Account</h2>
+<p>Usually, only authorized user (faculty and students in Statistics of BNU-HKBU UIC) are allowed to log in the Bayes cluster. You have to request an account before using the Bayes cluster, please fill out the <a href="https://shimo.im/forms/JcWGhwvdGVvHtpRd/fill?channel=UICSTAT"> Application Form </a> to request an account.</p>
+<h2 id="runtime">Runtime</h2>
+<p>In order to optimize computing resources on the Bayes cluster, the defualt storage for each account is limited to 50GB. The submitted computing tasks will also be queued to be processed by specified compute nodes, and the maximum running time for each task is limited as follows,</p>
+<table>
+<thead>
+<tr>
+<th>Node Name</th>
+<th>Maximum runtime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compute2030005000</td>
+<td>24 Hours</td>
+</tr>
+<tr>
+<td>Compute2030005001</td>
+<td>7 Days</td>
+</tr>
+<tr>
+<td>Compute2030005002</td>
+<td>24 Hours</td>
+</tr>
+<tr>
+<td>Compute2030005003</td>
+<td>7 Days</td>
+</tr>
+</tbody>
+</table>
+<h2 id="access-to-the-system">Access to the System</h2>
+<p>The Bayes cluster can only be accessed from UIC campus by an authorized user. If you are off-campus, you need to use <a href="https://itsc.uic.edu.cn/en/info/1030/1119.htm">UIC-VPN Service</a> to connect the cluster.</p>
+
+
+<div class="alert alert-warning" role="alert">
+
+
+    <p>The following instructions, we assume you:</p>
+<ol>
+<li>You have an USBC account (username: <code>user_name</code>, password: <code>passwd</code>)</li>
+<li>Are connecting:
+<ol>
+<li>(if on-campus) from the campus wired/wireless network</li>
+<li>(if off-campus) with UIC-VPN Service</li>
+</ol>
+</li>
+</ol>
+
+
+</div>
+
+<h3 id="ssh">SSH</h3>
+<p>In order to connect to the university computing clusters, you will need an SSH (secure shell) client, a piece of software for establishing secure connections to remote machines. On <strong>macOS and Linux</strong>, the default Termina application has such a client built-in. No download is necessary. On <strong>Windows</strong> machines, there is also an SSH-enable client (Windows CMD and Windows Powershell). You can also try <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a> and <a href="http://mobaxterm.mobatek.net/">MobaXterm</a>.</p>
+<ol>
+<li>Access a command-line tool on your machine:
+<ul>
+<li><strong>Linux</strong> open a Terminal window</li>
+<li><strong>macOS</strong> open a Terminal window</li>
+<li><strong>Windows</strong> open a CMD/Powershell window</li>
+</ul>
+</li>
+<li>SSH into the cluster:
+<ul>
+<li>type: <code>ssh user_name@hpc.uicstat.com</code></li>
+<li>If you are first time connecting to the cluster, you will see a comment about the fingerprint along with the question: <code>Are you sure you want to continue connecting (yes/no/[fingerprint])?</code>, please answer <strong>yes</strong></li>
+<li>Enter your password <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+</li>
+<li>End the SSH connect to the cluster:
+<ul>
+<li>To close the SSH connection, simply type <code>exit</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="before-using-it">Before using it</h2>
+<p>Every user have a default folder: <code>~/user_name/</code>. Please use the <code>~/user_name/</code> folder to store your data, codes and etc.. As the default home path has very limited storage (100MB) and the <code>~/user_name/</code> has 50GB. If you need external storage, please connect the maintainer.</p>
+<h2 id="file-transfer">File Transfer</h2>
+<p>After obtaining an account one of the things that you may wish to do is get data transferred to or from the Bayes cluster. Two of the most widely available tools for secure file transfer are <a href="https://en.wikipedia.org/wiki/Secure_copy_protocol">SCP (Secure Copy)</a> and <a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">SFTP (Secure File Transfer Protocol)</a> which utilize the SSH protocol to implement security. While SCP is a simple, non-interactive command line tool, it is often a more suitable choice when setting up unattended file transfers using scripts. Alternatively, SFTP is an interactive tool which offers features like remote file listing, copying, deleting, directory creation, etc.</p>
+<p>For using the SCP:</p>
+<ul>
+<li>Copy file (<code>name.file</code>) from local to the cluster: <code>scp /path_of_local/name.file user_name@hpc.uicstat.com:/path_of_remote/name.file</code></li>
+<li>Get file (<code>name.file</code>) from the cluster to local: <code>scp user_name@hpc.uicstat.com:/path_of_remote/name.file /path_of_local/name.file</code></li>
+</ul>
+<p>For using the SFTP:</p>
+<ul>
+<li>Copy file (<code>fname.file</code>) from local to the cluster:
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sftp user_name@hpc.uicstat.com
+put /path_of_remote/name.file
+</code></pre></div></li>
+<li>Get file (<code>name.file</code>) from the cluster to local:
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sftp user_name@hpc.uicstat.com
+get /path_of_remote/name.file
+</code></pre></div></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>There are no asterisks or dots to indicate how many characters you&rsquo;ve typed, so if you think you&rsquo;ve made a typo, hit Backspace many times and enter the password from scratch.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b527a80c7429d4d76cd74501926e3746">2 - Access to the Cluster</h1>
+    
+	<h2 id="for-linux-and-macos-user">For Linux and macOS User</h2>
+<p>The user who are using this two operating system, we recommand you to access the cluster via <strong>Terminal</strong>:</p>
+<ul>
+<li>For Linux user: press <code>CTRL + ALT + T</code> or click <code>Terminal</code></li>
+<li>FOr macOS user: go to <em>LaunchPad</em> and then type <code>Terminal</code></li>
+</ul>
+<p>Continue with the assumption in <a href="/docs/getting-started/quick_start/#access-to-the-system">Quick Start #Access to the System</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh user_name@hpc.uicstat.com
+</code></pre></div><p>If you can see the output below, it means that you have successfully access the cluster&rsquo;s control node.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Welcome to UIC-STAT Bayes Cluster <span style="color:#ce5c00;font-weight:bold">(</span>USBC<span style="color:#ce5c00;font-weight:bold">)</span>
+<span style="color:#8f5902;font-style:italic">#     ___          ___          ___          ___#</span>
+<span style="color:#8f5902;font-style:italic">#    /  /\        /  /\        /  /\        /  /\#</span>
+<span style="color:#8f5902;font-style:italic">#   /  /:/       /  /::\      /  /::\      /  /::\#</span>
+<span style="color:#8f5902;font-style:italic">#  /  /:/       /__/:/\:\    /  /:/\:\    /  /:/\:\#</span>
+<span style="color:#8f5902;font-style:italic"># /  /:/       _\_ \:\ \:\  /  /::\ \:\  /  /:/  \:\#</span>
+<span style="color:#8f5902;font-style:italic">#/__/:/     /\/__/\ \:\ \:\/__/:/\:\_\:|/__/:/ \  \:\#</span>
+<span style="color:#8f5902;font-style:italic">#\  \:\    /:/\  \:\ \:\_\/\  \:\ \:\/:/\  \:\  \__\/#</span>
+<span style="color:#8f5902;font-style:italic"># \  \:\  /:/  \  \:\_\:\   \  \:\_\::/  \  \:\#</span>
+<span style="color:#8f5902;font-style:italic">#  \  \:\/:/    \  \:\/:/    \  \:\/:/    \  \:\#</span>
+<span style="color:#8f5902;font-style:italic">#   \  \::/      \  \::/      \__\::/      \  \:\#</span>
+<span style="color:#8f5902;font-style:italic">#    \__\/        \__\/           ~~        \__\/#</span>
+
+ * Documentation:       https://uicstat.com/wiki/
+ * Web UI:       	https://hpc.uicstat.com:8443/
+ * Support Maintenance: bayes@uicstat.com
+
+Date and <span style="color:#204a87">time</span>             <span style="color:#ce5c00;font-weight:bold">=</span> Sun Mar <span style="color:#0000cf;font-weight:bold">13</span> 23:38:36 CST <span style="color:#0000cf;font-weight:bold">2022</span>
+<span style="color:#000">Release</span>                   <span style="color:#ce5c00;font-weight:bold">=</span> Ubuntu 20.04.4 LTS
+<span style="color:#000">Kernel</span>                    <span style="color:#ce5c00;font-weight:bold">=</span> 5.4.0-92-generic GNU/Linux
+
+Last login: Sat Mar <span style="color:#0000cf;font-weight:bold">12</span> 22:40:25 <span style="color:#0000cf;font-weight:bold">2022</span> from 172.16.231.10
+</code></pre></div><p>After successfully logging in, the path is your personal Home folder, and the absolute path is <code>/Storage2030005000/home/user_name</code>. You can access and modify all the contents of the personal folder.</p>
+<ul>
+<li>When you want to log out of the workstation, execute the following command <code>exit</code> or just press <code>CTRL+D</code>.</li>
+<li>If you log in for the first time, the system will force you to change the password. Be sure to set a more complicated password, and then log in again after the modification.</li>
+<li>If you want to change the password again, use the following command passwd. Similarly, no characters are displayed in the terminal input area when you are changing your password.</li>
+</ul>
+<h2 id="for-windows-user">For Windows User</h2>
+<p>Since the operations on the cluster are mostly based on Linux, if the same or similar operations can be used under Windows, it will bring great convenience to users. We provide several ways for you to use the cluster under Windows as follows:</p>
+<ul>
+<li><u>For Windows 10 and above</u>, you can use CMD/Powershell with SSH</li>
+<li><u>FOr Windows 8 and below</u> you can choose one of these recommanded tools:
+<ul>
+<li><a href="https://documentation.help/PuTTY/">puTTY</a></li>
+<li><a href="https://mobaxterm.mobatek.net/documentation.html">MobaXterm</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="set-two-factor-authentication-2fa">Set Two-Factor Authentication (2FA)</h2>
+<p>Simply using a password to verify the security factor is not enough, because anyone who knows your password can use it to log in to your account. The role of 2FA is to allow the user to authorize access to his account if he needs to complete two verification methods at the same time. Similar is MFA (multi-step verification. Although more authentication methods will increase security, it will also bring tedious login process, which will affect the user experience.</p>
+<p>The server has enabled the 2FA, login using account password + one-time verification code. The following is the configuration method.</p>
+<ol>
+<li>
+<p>Download an App: the UIC VPN is also need a token to login, you can use the app (ndkey 宁顿令牌) to be your 2FA client validator.</p>
+</li>
+<li>
+<p>Server Account Configuration: the server uses the google-authenticator module to implement 2FA for SSH. Configure server 2FA to use commands:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">google-authenticator
+</code></pre></div><p>This command will generate a secret key under the server account. During the generation process, you will be asked a series of questions. It is recommended to read it carefully. Personally, I recommend all of them you can just input y. After the first question, a command line window displays a QR code. At this point, take out your phone to open ndkey, select “Add Account” or just press “+” and scan the code. After successfully scanning the code, you can see that ndkey will continue to generate six-digit verification codes, and each verification code will expire after 30s.</p>
+</li>
+<li>
+<p>Test: after the configration, you can just open a new windows for a test:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh user_name@hpc.uicstat.com
+$ Password:                   <span style="color:#8f5902;font-style:italic"># &lt;&lt; input your original password</span>
+$ Verification code:          <span style="color:#8f5902;font-style:italic"># &lt;&lt; input your validation code on your phone</span>
+</code></pre></div></li>
+</ol>
+
+
+<div class="alert alert-warning" role="alert">
+
+
+    <ol>
+<li>After the server account is generated and configured, the secret key will be stored in the .google_authenticator file under HOME. If you want to close 2FA, delete this file. You can also back up this file to your local.</li>
+<li>No internet connection is required to use 2FA. The 2FA code is generated based on the time, as long as the server time and the phone time are consistent.</li>
+<li>If you access to the cluster via SSH key for authentication instead of password authentication, 2FA is not required (regardless of whether the server is configured). This setting is based on the assumption that the local private key is trusted.</li>
+<li>If you lose your 2FA key, please contact the administrator to unbind your 2FA token.</li>
+</ol>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ed47a231092ff2e96f199c961f3930ea">3 - Environment Module</h1>
+    
+	<h2 id="overview">Overview</h2>
+<p>“Environment Modules” are the mechaism by which much of the software is made available to the users of USBC. The Modules package is a tool that simplifies shell initialization and lets users easily modify theire environment during a session using modulefiles.</p>
+<h2 id="check-the-avaiable-module-and-loaded-module">Check the Avaiable Module and Loaded Module</h2>
+<p>Before running the code, you can list all (loaded and unlabled modules) on Bayes cluster using:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Compute2030005000:~$ module avail
+------------------------------------------ /usr/share/modules/modulefiles ------------------------------------------
+compiler/cuda/10.2          computing/conda/5.3.1  computing/MATLAB/2021b
+compiler/mpi/openmpi/4.1.1  computing/gap/4.11.1   computing/SageMath/9.3
+</code></pre></div><h2 id="load-and-unload-module">Load and Unload Module</h2>
+<p>You can then load a module by using <code>module load </code> and use <code>module list</code> to check loaded module:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Compute2030005000:~$ module load computing/MATLAB/2021b
+user_name@Compute2030005000:~$ module list
+Currently Loaded Modulefiles:
+ 1<span style="color:#ce5c00;font-weight:bold">)</span> computing/MATLAB/2021b
+</code></pre></div><p>If you want to stoping using a module (by undoing the changes that loading that module made to your environment):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Compute2030005000:~$ module unload computing/MATLAB/2021b
+user_name@Compute2030005000:~$ module list
+No Modulefiles Currently Loaded.
+user_name@Compute2030005000:~$
+</code></pre></div>
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Notice</h4>
+
+    <code>module</code> can be only used in the Compute Node.
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-e1a7e763d6914ddf240b4d2aaca22927">4 - Interactive Tasks</h1>
+    
+	<h2 id="submit-interactive-tasks">Submit interactive tasks</h2>
+<p>An interactive task is a special queue task. In this mode, users can log in to a computing node directly, and all operations are performed on this node. This function is mainly convenient for users to debug the program on the server so that they can see the output of the program in real time.</p>
+<p>You need to use the <code>salloc</code> command to allocate the resources needed for interactive tasks. Its syntax is:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ salloc <span style="color:#ce5c00;font-weight:bold">[</span>Apply <span style="color:#204a87;font-weight:bold">for</span> resources<span style="color:#ce5c00;font-weight:bold">]</span>
+</code></pre></div><p>You may specify the requested resource in the form of options, which are basically the same as those in the SLURM script. For example, you can apply for resources in the following ways:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Control:~$ salloc -N <span style="color:#0000cf;font-weight:bold">1</span> --cpus-per-task<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">4</span> -t 5:00 -p CPU-Compute
+salloc: Granted job allocation <span style="color:#0000cf;font-weight:bold">411</span>
+user_name@Control:~$
+</code></pre></div><p>After successful execution, SLURM will give you a new shell. Note that the node where the user is located is still the master node at this time. You need to manually switch to the compute node using the <code>slink</code> command:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Control:~$ salloc -N <span style="color:#0000cf;font-weight:bold">1</span> --cpus-per-task<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">4</span> -t 5:00 -p CPU-Compute
+salloc: Granted job allocation <span style="color:#0000cf;font-weight:bold">2294</span>
+salloc: Waiting <span style="color:#204a87;font-weight:bold">for</span> resource configuration
+salloc: Nodes Compute2030005001 are ready <span style="color:#204a87;font-weight:bold">for</span> job
+use_name@Control:~slink
+user_name@Compute2030005001:~$
+</code></pre></div><p>As shown above, after executing <code>salloc</code>, SLURM automatically allocates the job number and informs which node is available. After successfully obtaining resources and login via the ssh, you get a new shell (Line 5). At this time, the user can directly switch to the target node comput1 to perform the computing task.</p>
+<p>After the interactive calculation is completed, use exit to exit the node, and then execute exit to exit the shell allocated by SLURM to end this interactive task. SLURM will inform you that the resources of the interactive task have been released.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Compute2030005001:~$ <span style="color:#204a87">exit</span>                 <span style="color:#8f5902;font-style:italic"># This step is to exit CPU-compute-1</span>
+<span style="color:#204a87">exit</span>
+Connection to compute2030005003 closed.
+user_name@Control:~$ <span style="color:#204a87">exit</span>
+<span style="color:#204a87">exit</span>
+salloc: Relinquishing job allocation <span style="color:#0000cf;font-weight:bold">2294</span> <span style="color:#8f5902;font-style:italic"># Resources are also released when exiting</span>
+user_name@Control:~$
+</code></pre></div><p>Then, you will return to the Control node.</p>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Note</h4>
+
+    Remember: Users are not allowed to login to compute nodes unless they have a job running there. If you SSH to a compute node without any active job allocation, you will be greeted by the following message:
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Notice</h4>
+
+    <p><code>slink</code> or <code>ssh</code> without a task is prohibited:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user_name@Control:~$ ssh Compute2030005001
+Access denied: user user_name<span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">uid</span><span style="color:#ce5c00;font-weight:bold">=</span>xxx<span style="color:#ce5c00;font-weight:bold">)</span> has no active <span style="color:#204a87">jobs</span> on this node.
+Connection closed by Compute2030005001 port <span style="color:#0000cf;font-weight:bold">22</span>
+</code></pre></div>
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-538646455b025abcf902cacf830bb205">5 - Batch Tasks</h1>
+    
+	<p>To submit a batch task on the cluster, it requires a SLURM script to clarify the requested resources and the programs to run.</p>
+<h3 id="check-available-resource">Check Available Resource</h3>
+<p>Before the submission, please check the compute nodes’ status to insure itthey hashave enough resource to run the upcoming jobs.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Control:~$ sinfo
+PARTITION      AVAIL  TIMELIMIT  NODES  STATE NODELIST
+CPU-Compute-1*    up 1-00:00:00      <span style="color:#0000cf;font-weight:bold">1</span>   idle Compute2030005000
+CPU-Compute-2     up 7-00:00:00      <span style="color:#0000cf;font-weight:bold">1</span>   idle Compute2030005001
+GPU-Compute-1     up 7-00:00:00      <span style="color:#0000cf;font-weight:bold">1</span>    mix Compute2030005002
+GPU-Compute-2     up   infinite      <span style="color:#0000cf;font-weight:bold">1</span>  alloc Compute2030005003
+</code></pre></div><p>As the example shown, sinfo can roughly shows the information of all the partitions.</p>
+<ul>
+<li>If the STATE column is “idle”, it means the node is in an idle state</li>
+<li>If the STATE column is “alloc”, it means the node is full</li>
+<li>If the STATE column is “mix”, it means that the node is occupied by someone, but it still has remaining resources</li>
+</ul>
+<p>You can also use the pestat to chekc hte detail of each node:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Control:~$ pestat
+Hostname       Partition     Node Num_CPU  CPUload  Memsize  Freemem  Joblist
+                            State Use/Tot              <span style="color:#ce5c00;font-weight:bold">(</span>MB<span style="color:#ce5c00;font-weight:bold">)</span>     <span style="color:#ce5c00;font-weight:bold">(</span>MB<span style="color:#ce5c00;font-weight:bold">)</span>  JobId User ...
+Compute2030005000  CPU-Compute-1*     idle   <span style="color:#0000cf;font-weight:bold">0</span>  <span style="color:#0000cf;font-weight:bold">40</span>    1.11*   <span style="color:#0000cf;font-weight:bold">128000</span>    <span style="color:#0000cf;font-weight:bold">35643</span>
+Compute2030005001   CPU-Compute-2     idle   <span style="color:#0000cf;font-weight:bold">0</span>  <span style="color:#0000cf;font-weight:bold">40</span>    0.11    <span style="color:#0000cf;font-weight:bold">128000</span>    <span style="color:#0000cf;font-weight:bold">34578</span>
+Compute2030005002   GPU-Compute-1      mix   <span style="color:#0000cf;font-weight:bold">2</span>  <span style="color:#0000cf;font-weight:bold">40</span>   16.30    <span style="color:#0000cf;font-weight:bold">128000</span>    37085	 <span style="color:#0000cf;font-weight:bold">1422</span> user_2
+Compute2030005003   GPU-Compute-2    alloc  <span style="color:#0000cf;font-weight:bold">40</span>  <span style="color:#0000cf;font-weight:bold">40</span>   35.50*   <span style="color:#0000cf;font-weight:bold">128000</span>    <span style="color:#0000cf;font-weight:bold">29748</span>  <span style="color:#0000cf;font-weight:bold">1454</span> user_1
+</code></pre></div><h3 id="submit-a-batch-task">Submit a Batch Task</h3>
+<p>After you have generate a proper SLURM script, you can eaily submit your job by using <code>sbatch</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Control:~$ sbatch run.slurm
+Summited batch job <span style="color:#0000cf;font-weight:bold">4100</span>
+</code></pre></div><h3 id="check-tasks-status">Check Task&rsquo;s Status</h3>
+<p>After the submission, you can use <code>squeue</code> to check the status of your task:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">user_name@Control:~$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST<span style="color:#ce5c00;font-weight:bold">(</span>REASON<span style="color:#ce5c00;font-weight:bold">)</span>
+              <span style="color:#0000cf;font-weight:bold">1454</span> GPU-Compu 		 <span style="color:#204a87">test</span>   user_1  R 22-17:04:56      <span style="color:#0000cf;font-weight:bold">1</span> Compute2030005003
+              <span style="color:#0000cf;font-weight:bold">1422</span> GPU-Compu 		debug   user_2  R       01:30      <span style="color:#0000cf;font-weight:bold">1</span> Compute2030005002
+</code></pre></div><ul>
+<li><code>squeue -l</code>: can show detailed information</li>
+<li><code>squeue -u user_name</code>: only show user_name&rsquo;s task</li>
+<li><code>squeue -t state</code>: only shows the task with “state” status</li>
+</ul>
+<p>To cancel task:</p>
+<ul>
+<li><code>scancel jobid</code>: cancel the task with JobID = jobid</li>
+<li><code>scancel -u user_name</code>: cancel all the tasks belong to user_name</li>
+<li><code>scancel -s state</code>: Delete all the tasks with “state” status</li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Notice</h4>
+
+    User can only cancel its only task, not others!
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-4ee4a1073a51ffc6b5fb6bb536540891">6 - Software Installation</h1>
+    
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>In default situation, you cannot install software via <code>sudo</code> as normal user are not authorized. However, user can install their needed software under their own home directory. Here are some example:</p>
+
+</div>
+
+<h2 id="install-python-via-anaconda">Install Python via Anaconda</h2>
+<p>Conda can create a virtual python environment, and it easily install packages. This created virtual individual environment can solve the python&rsquo;s version and requirement problem and it is fully controlled by the user you can install packages without root permission</p>
+<ol>
+<li>Activate Anaconda environment</li>
+<li>Create an environment with conda</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8f5902;font-style:italic"># connect to the Compute Node</span>
+salloc <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> slink
+
+<span style="color:#8f5902;font-style:italic"># activate anaconda PATH</span>
+module load computing/conda/5.3.1
+
+<span style="color:#8f5902;font-style:italic"># using conda</span>
+proxychains4 conda create -name<span style="color:#ce5c00;font-weight:bold">=</span>py_env <span style="color:#000">python</span><span style="color:#ce5c00;font-weight:bold">=</span>3.7
+
+<span style="color:#8f5902;font-style:italic"># activate py_env environment</span>
+<span style="color:#204a87">source</span> activate py_env 
+
+<span style="color:#8f5902;font-style:italic"># use Beigjing Foreign Studies Univerisy&#39;s  Mirrors (https://mirrors.bfsu.edu.cn)</span>
+proxychains4 python -m pip config <span style="color:#204a87">set</span> global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
+
+<span style="color:#8f5902;font-style:italic">## run program</span>
+python main.py
+</code></pre></div><h2 id="install-r-via-anaconda">Install R via Anaconda</h2>
+<p>Conda can create a virtual R environment, and it easily install packages. This created virtual individual environment can solve the R&rsquo;s version and requirement problem and it is fully controlled by the user you can install packages without root permission</p>
+<ol>
+<li>Activate Anaconda environment</li>
+<li>Create an environment with conda</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8f5902;font-style:italic"># activate anaconda PATH</span>
+module load computing/conda/5.3.1
+
+<span style="color:#8f5902;font-style:italic"># using conda</span>
+proxychains4 conda create -n r_env
+
+<span style="color:#8f5902;font-style:italic"># activate r_env</span>
+<span style="color:#204a87">source</span> activate r_env
+proxychains4 conda install -c conda-forge r-base <span style="color:#8f5902;font-style:italic">#or proxychains4 conda install -c conda-forge/label/gcc7 r-base</span>
+<span style="color:#8f5902;font-style:italic"># or proxychains4 conda install r-base</span>
+<span style="color:#8f5902;font-style:italic">## run program</span>
+R
+</code></pre></div><p><strong>Tips</strong>: sometimes we may use devtools::install_github() to install R pacakge directly from GitHub, however, the connection between the school intranet and GitHub server is not robust enough. Here is a solution:</p>
+<ul>
+<li>install package via the github proxy</li>
+<li>use BFSU CRAN Mirrors: <code>install.packages(&quot;{package_name}&quot;, repos=&quot;https://mirrors.bfsu.edu.cn/CRAN/&quot;)</code></li>
+</ul>
+<h2 id="install-julia-via-anaconda">Install Julia via Anaconda</h2>
+<p>Conda can create a virtual Julia environment, and it easily install packages.</p>
+<ol>
+<li>Activate Anaconda environment</li>
+<li>Create an environment with conda</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8f5902;font-style:italic"># activate anaconda PATH</span>
+module load computing/conda/5.3.1
+
+<span style="color:#8f5902;font-style:italic"># using conda</span>
+proxychains4 conda create -name<span style="color:#ce5c00;font-weight:bold">=</span>julia_env julia
+
+<span style="color:#8f5902;font-style:italic"># activate py_env environment</span>
+<span style="color:#204a87">source</span> activate py_env 
+
+<span style="color:#8f5902;font-style:italic">## run program</span>
+julia test.jl
+</code></pre></div><h2 id="install-packages-wihout-sudo-privileges">Install packages wihout sudo privileges</h2>
+<p>User withou sudo priviledges need to compile the package from source, for example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">install from <span style="color:#204a87">source</span>
+apt-get <span style="color:#204a87">source</span> PACKAGE
+./configure --prefix<span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">$HOME</span>/<span style="color:#ce5c00;font-weight:bold">{</span>package-PATH<span style="color:#ce5c00;font-weight:bold">}</span>
+make
+make install
+</code></pre></div>
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-628f6e29ce838d768d6a8a578940d243">7 - File Transfer</h1>
+    
+	<p>After obtaining an account one of the things that you may wish to do is get data transferred to or from the Bayes cluster. Two of the most widely available tools for secure file transfer are <a href="https://en.wikipedia.org/wiki/Secure_copy_protocol">SCP (Secure Copy)</a> and <a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol">SFTP (Secure File Transfer Protocol)</a> which utilize the SSH protocol to implement security. While SCP is a simple, non-interactive command line tool, it is often a more suitable choice when setting up unattended file transfers using scripts. Alternatively, SFTP is an interactive tool which offers features like remote file listing, copying, deleting, directory creation, etc.</p>
+<ul>
+<li>For using the SCP:
+<ul>
+<li>Copy file (<code>file_name.file</code>) from local to the cluster: <code>scp /path_of_local/file_name.file user_name@hpc.uicstat.com:/path_of_remote/file_name.file</code></li>
+<li>Get file (<code>file_name.file</code>) from the cluster to local: <code>scp user_name@hpc.uicstat.com:/path_of_remote/file_name.file /path_of_local/file_name.file</code></li>
+</ul>
+</li>
+<li>For using the SFTP:
+<ul>
+<li>Copy file (<code>file_name.file</code>) from local to the cluster:</li>
+</ul>
+<pre tabindex="0"><code class="language-{r," data-lang="{r,">sftp user_name@hpc.uicstat.com
+put /path_of_remote/file_name.file
+</code></pre><ul>
+<li>Get file (<code>file_name.file</code>) from the cluster to local:</li>
+</ul>
+<pre tabindex="0"><code class="language-{r," data-lang="{r,">sftp user_name@hpc.uicstat.com
+get /path_of_remote/file_name.file
+</code></pre></li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email Us" aria-label="Email Us">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:issues@uicstat.com" aria-label="Email Us">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email Us" aria-label="Email Us">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:bayes@uicstat.com" aria-label="Email Us">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub Repository" aria-label="GitHub Repository">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/Bayes-Cluster" aria-label="GitHub Repository">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <hr class="featurette-divider">
+<center>
+        <small class="text-white">Copyright &copy; 2018 - 2022  all right reserved by <a href="https://github.com/Bayes-Cluster"> Bayes Cluster Mantenance Group</a></small>
+        
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.8ab8f81ff7e1454d30024cd6f956d4d341c3a97e2a673f988065f2ee4e147922.js" integrity="sha256-irj4H/fhRU0wAkzW&#43;VbU00HDqX4qZz&#43;YgGXy7k4UeSI=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIC-STAT HPC – Supported Software</title>
+    <link>/services/software/</link>
+    <description>Recent content in Supported Software on UIC-STAT HPC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/services/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Services: Supported Software</title>
+      <link>/services/software/introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/services/software/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We provide programming and configuration support for High Performance Computing software. Our services include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Software installation (Licensed or Open-source)&lt;/li&gt;
+&lt;li&gt;Troubleshooting malfunctioning programs&lt;/li&gt;
+&lt;li&gt;Developing new parallel codes&lt;/li&gt;
+&lt;li&gt;Parallelizing existing serial codes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We support several implementations of MPI, OpenMP and MATLAB Parallelization.&lt;/p&gt;
+&lt;h2 id=&#34;software-list&#34;&gt;Software List&lt;/h2&gt;
+&lt;h3 id=&#34;compiler&#34;&gt;Compiler&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Software&lt;/th&gt;
+&lt;th&gt;Synopsis&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;GCC&lt;/td&gt;
+&lt;td&gt;The GNU Compiler Collectiong&lt;/td&gt;
+&lt;td&gt;7.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CUDA&lt;/td&gt;
+&lt;td&gt;A parallel computing platform and application programming interface&lt;/td&gt;
+&lt;td&gt;10.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OpenMP&lt;/td&gt;
+&lt;td&gt;An application programming interface for multiprocessing programming&lt;/td&gt;
+&lt;td&gt;5.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OpenMPI&lt;/td&gt;
+&lt;td&gt;A Message Passing Interface Library&lt;/td&gt;
+&lt;td&gt;4.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Software&lt;/th&gt;
+&lt;th&gt;Synopsis&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;R&lt;/td&gt;
+&lt;td&gt;Programming environment&lt;/td&gt;
+&lt;td&gt;3.5+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GAP&lt;/td&gt;
+&lt;td&gt;a System for Computational Discrete Algebra&lt;/td&gt;
+&lt;td&gt;4.11.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;General-purpose scripting language&lt;/td&gt;
+&lt;td&gt;3.0+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MATLAB&lt;/td&gt;
+&lt;td&gt;A programming language and numeric computing environment developed by MathWorks&lt;/td&gt;
+&lt;td&gt;R2021b, R2022a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Anaonda&lt;/td&gt;
+&lt;td&gt;A distribution of the Python and R programming languages for scientific computing&lt;/td&gt;
+&lt;td&gt;5.3.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SageMath&lt;/td&gt;
+&lt;td&gt;A computer algebra system (CAS) with features covering many aspects of mathematics&lt;/td&gt;
+&lt;td&gt;9.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

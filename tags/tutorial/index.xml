@@ -1,0 +1,611 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIC-STAT HPC – tutorial</title>
+    <link>/tags/tutorial/</link>
+    <description>Recent content in tutorial on UIC-STAT HPC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: MATLAB</title>
+      <link>/docs/examples/matlab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/examples/matlab/</guid>
+      <description>
+        
+        
+        &lt;p&gt;For now, MATLAB is no supported via the web portal, thus, user can only submit their MATLAB jobs via the terminal.Here is an example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -J test               # The job&amp;#39;s name is test&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -N 1                  # allocate 1 node&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -p CPU-Compute        # submit the job to cpu partition&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH --cpus-per-task=4     # allocate 4 cpu cores&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -t 1-00:00:00         # runtime: 1 day&lt;/span&gt;
+
+module load computing/MATLAB/2021b &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# load matlab module&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# use MATLAB to run the &amp;#34;Test.m&amp;#34; file&lt;/span&gt;
+matlab -nodesktop -nosplash -nodisplay -r &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Test&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;matlab -nodesktop -nosplash -nodisplay&lt;/code&gt; means &lt;u&gt;disable the MATLAB GUI and welcome page&lt;/u&gt;, &lt;code&gt;-r&lt;/code&gt; means excecute the MATLAB command. The file name is “Test.m”, however, in the script, &lt;u&gt;we need to remove the “.m”&lt;/u&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Getting Started</title>
+      <link>/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Python, R and Julia</title>
+      <link>/docs/examples/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/examples/python/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;
+&lt;p&gt;It is easy for you to run the Python Script with SLURM, here is an example, assumes that we want to run job.py, with conda-based Python environment:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -J test               # The job&amp;#39;s name is test&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -N 1                  # allocate 1 node&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -p CPU-Compute        # submit the job to cpu partition&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH --cpus-per-task=4     # allocate 4 cpu cores&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -t 1-00:00:00         # runtime: 1 day&lt;/span&gt;
+
+module load computing/conda/5.3.1
+&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; activate environment_name
+
+python test.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;r&#34;&gt;R&lt;/h2&gt;
+&lt;p&gt;It is easy for you to run the R Script with SLURM, here is an example, assumes that we want to run job.py, with conda-based Python environment:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -J test               # The job&amp;#39;s name is test&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -N 1                  # allocate 1 node&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -p CPU-Compute        # submit the job to cpu partition&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH --cpus-per-task=4     # allocate 4 cpu cores&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -t 1-00:00:00         # runtime: 1 day&lt;/span&gt;
+
+module load computing/conda/5.3.1
+&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; activate environment_name
+
+Rscript --vanilla test.R
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;julia&#34;&gt;Julia&lt;/h2&gt;
+&lt;p&gt;It is easy for you to run the Julia Script with SLURM, here is an example, assumes that we want to run job.py, with conda-based Python environment:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -J test               # The job&amp;#39;s name is test&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -N 1                  # allocate 1 node&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -p CPU-Compute        # submit the job to cpu partition&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH --cpus-per-task=4     # allocate 4 cpu cores&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#SBATCH -t 1-00:00:00         # runtime: 1 day&lt;/span&gt;
+
+module load computing/conda/5.3.1
+&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; activate environment_name
+
+julia test.jl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Quick Start</title>
+      <link>/docs/getting-started/quick_start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/quick_start/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;quick-start&#34;&gt;Quick Start&lt;/h2&gt;
+&lt;p&gt;After reading the introduction of USBC, you may have interest in running your first program on it. Steps are as follows: Apply for an account. Log in the Cluster (set up &lt;a href=&#34;https://itsc.uic.edu.cn/&#34;&gt;campus VPN service&lt;/a&gt; connection if you are off-campus). Upload your program source code. Prepare a SLURM script to run your program. Submit your program running task to the Cluster.&lt;/p&gt;
+&lt;h2 id=&#34;request-for-an-account&#34;&gt;Request for an Account&lt;/h2&gt;
+&lt;p&gt;Usually, only authorized user (faculty and students in Statistics of BNU-HKBU UIC) are allowed to log in the Bayes cluster. You have to request an account before using the Bayes cluster, please fill out the &lt;a href=&#34;https://shimo.im/forms/JcWGhwvdGVvHtpRd/fill?channel=UICSTAT&#34;&gt; Application Form &lt;/a&gt; to request an account.&lt;/p&gt;
+&lt;h2 id=&#34;runtime&#34;&gt;Runtime&lt;/h2&gt;
+&lt;p&gt;In order to optimize computing resources on the Bayes cluster, the defualt storage for each account is limited to 50GB. The submitted computing tasks will also be queued to be processed by specified compute nodes, and the maximum running time for each task is limited as follows,&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Node Name&lt;/th&gt;
+&lt;th&gt;Maximum runtime&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005000&lt;/td&gt;
+&lt;td&gt;24 Hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005001&lt;/td&gt;
+&lt;td&gt;7 Days&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005002&lt;/td&gt;
+&lt;td&gt;24 Hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005003&lt;/td&gt;
+&lt;td&gt;7 Days&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;access-to-the-system&#34;&gt;Access to the System&lt;/h2&gt;
+&lt;p&gt;The Bayes cluster can only be accessed from UIC campus by an authorized user. If you are off-campus, you need to use &lt;a href=&#34;https://itsc.uic.edu.cn/en/info/1030/1119.htm&#34;&gt;UIC-VPN Service&lt;/a&gt; to connect the cluster.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;p&gt;The following instructions, we assume you:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You have an USBC account (username: &lt;code&gt;user_name&lt;/code&gt;, password: &lt;code&gt;passwd&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Are connecting:
+&lt;ol&gt;
+&lt;li&gt;(if on-campus) from the campus wired/wireless network&lt;/li&gt;
+&lt;li&gt;(if off-campus) with UIC-VPN Service&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;ssh&#34;&gt;SSH&lt;/h3&gt;
+&lt;p&gt;In order to connect to the university computing clusters, you will need an SSH (secure shell) client, a piece of software for establishing secure connections to remote machines. On &lt;strong&gt;macOS and Linux&lt;/strong&gt;, the default Termina application has such a client built-in. No download is necessary. On &lt;strong&gt;Windows&lt;/strong&gt; machines, there is also an SSH-enable client (Windows CMD and Windows Powershell). You can also try &lt;a href=&#34;http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html&#34;&gt;PuTTY&lt;/a&gt; and &lt;a href=&#34;http://mobaxterm.mobatek.net/&#34;&gt;MobaXterm&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Access a command-line tool on your machine:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linux&lt;/strong&gt; open a Terminal window&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;macOS&lt;/strong&gt; open a Terminal window&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt; open a CMD/Powershell window&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSH into the cluster:
+&lt;ul&gt;
+&lt;li&gt;type: &lt;code&gt;ssh user_name@hpc.uicstat.com&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;If you are first time connecting to the cluster, you will see a comment about the fingerprint along with the question: &lt;code&gt;Are you sure you want to continue connecting (yes/no/[fingerprint])?&lt;/code&gt;, please answer &lt;strong&gt;yes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enter your password &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;End the SSH connect to the cluster:
+&lt;ul&gt;
+&lt;li&gt;To close the SSH connection, simply type &lt;code&gt;exit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;before-using-it&#34;&gt;Before using it&lt;/h2&gt;
+&lt;p&gt;Every user have a default folder: &lt;code&gt;~/user_name/&lt;/code&gt;. Please use the &lt;code&gt;~/user_name/&lt;/code&gt; folder to store your data, codes and etc.. As the default home path has very limited storage (100MB) and the &lt;code&gt;~/user_name/&lt;/code&gt; has 50GB. If you need external storage, please connect the maintainer.&lt;/p&gt;
+&lt;h2 id=&#34;file-transfer&#34;&gt;File Transfer&lt;/h2&gt;
+&lt;p&gt;After obtaining an account one of the things that you may wish to do is get data transferred to or from the Bayes cluster. Two of the most widely available tools for secure file transfer are &lt;a href=&#34;https://en.wikipedia.org/wiki/Secure_copy_protocol&#34;&gt;SCP (Secure Copy)&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol&#34;&gt;SFTP (Secure File Transfer Protocol)&lt;/a&gt; which utilize the SSH protocol to implement security. While SCP is a simple, non-interactive command line tool, it is often a more suitable choice when setting up unattended file transfers using scripts. Alternatively, SFTP is an interactive tool which offers features like remote file listing, copying, deleting, directory creation, etc.&lt;/p&gt;
+&lt;p&gt;For using the SCP:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy file (&lt;code&gt;name.file&lt;/code&gt;) from local to the cluster: &lt;code&gt;scp /path_of_local/name.file user_name@hpc.uicstat.com:/path_of_remote/name.file&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Get file (&lt;code&gt;name.file&lt;/code&gt;) from the cluster to local: &lt;code&gt;scp user_name@hpc.uicstat.com:/path_of_remote/name.file /path_of_local/name.file&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For using the SFTP:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy file (&lt;code&gt;fname.file&lt;/code&gt;) from local to the cluster:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sftp user_name@hpc.uicstat.com
+put /path_of_remote/name.file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Get file (&lt;code&gt;name.file&lt;/code&gt;) from the cluster to local:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sftp user_name@hpc.uicstat.com
+get /path_of_remote/name.file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;There are no asterisks or dots to indicate how many characters you&amp;rsquo;ve typed, so if you think you&amp;rsquo;ve made a typo, hit Backspace many times and enter the password from scratch.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Access to the Cluster</title>
+      <link>/docs/getting-started/login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/login/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;for-linux-and-macos-user&#34;&gt;For Linux and macOS User&lt;/h2&gt;
+&lt;p&gt;The user who are using this two operating system, we recommand you to access the cluster via &lt;strong&gt;Terminal&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For Linux user: press &lt;code&gt;CTRL + ALT + T&lt;/code&gt; or click &lt;code&gt;Terminal&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;FOr macOS user: go to &lt;em&gt;LaunchPad&lt;/em&gt; and then type &lt;code&gt;Terminal&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Continue with the assumption in &lt;a href=&#34;/docs/getting-started/quick_start/#access-to-the-system&#34;&gt;Quick Start #Access to the System&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh user_name@hpc.uicstat.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you can see the output below, it means that you have successfully access the cluster&amp;rsquo;s control node.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;Welcome to UIC-STAT Bayes Cluster &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;USBC&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#     ___          ___          ___          ___#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#    /  /\        /  /\        /  /\        /  /\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#   /  /:/       /  /::\      /  /::\      /  /::\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#  /  /:/       /__/:/\:\    /  /:/\:\    /  /:/\:\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# /  /:/       _\_ \:\ \:\  /  /::\ \:\  /  /:/  \:\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#/__/:/     /\/__/\ \:\ \:\/__/:/\:\_\:|/__/:/ \  \:\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#\  \:\    /:/\  \:\ \:\_\/\  \:\ \:\/:/\  \:\  \__\/#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# \  \:\  /:/  \  \:\_\:\   \  \:\_\::/  \  \:\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#  \  \:\/:/    \  \:\/:/    \  \:\/:/    \  \:\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#   \  \::/      \  \::/      \__\::/      \  \:\#&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#    \__\/        \__\/           ~~        \__\/#&lt;/span&gt;
+
+ * Documentation:       https://uicstat.com/wiki/
+ * Web UI:       	https://hpc.uicstat.com:8443/
+ * Support Maintenance: bayes@uicstat.com
+
+Date and &lt;span style=&#34;color:#204a87&#34;&gt;time&lt;/span&gt;             &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; Sun Mar &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;13&lt;/span&gt; 23:38:36 CST &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2022&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;Release&lt;/span&gt;                   &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; Ubuntu 20.04.4 LTS
+&lt;span style=&#34;color:#000&#34;&gt;Kernel&lt;/span&gt;                    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; 5.4.0-92-generic GNU/Linux
+
+Last login: Sat Mar &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;12&lt;/span&gt; 22:40:25 &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2022&lt;/span&gt; from 172.16.231.10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After successfully logging in, the path is your personal Home folder, and the absolute path is &lt;code&gt;/Storage2030005000/home/user_name&lt;/code&gt;. You can access and modify all the contents of the personal folder.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you want to log out of the workstation, execute the following command &lt;code&gt;exit&lt;/code&gt; or just press &lt;code&gt;CTRL+D&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If you log in for the first time, the system will force you to change the password. Be sure to set a more complicated password, and then log in again after the modification.&lt;/li&gt;
+&lt;li&gt;If you want to change the password again, use the following command passwd. Similarly, no characters are displayed in the terminal input area when you are changing your password.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;for-windows-user&#34;&gt;For Windows User&lt;/h2&gt;
+&lt;p&gt;Since the operations on the cluster are mostly based on Linux, if the same or similar operations can be used under Windows, it will bring great convenience to users. We provide several ways for you to use the cluster under Windows as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;u&gt;For Windows 10 and above&lt;/u&gt;, you can use CMD/Powershell with SSH&lt;/li&gt;
+&lt;li&gt;&lt;u&gt;FOr Windows 8 and below&lt;/u&gt; you can choose one of these recommanded tools:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://documentation.help/PuTTY/&#34;&gt;puTTY&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mobaxterm.mobatek.net/documentation.html&#34;&gt;MobaXterm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;set-two-factor-authentication-2fa&#34;&gt;Set Two-Factor Authentication (2FA)&lt;/h2&gt;
+&lt;p&gt;Simply using a password to verify the security factor is not enough, because anyone who knows your password can use it to log in to your account. The role of 2FA is to allow the user to authorize access to his account if he needs to complete two verification methods at the same time. Similar is MFA (multi-step verification. Although more authentication methods will increase security, it will also bring tedious login process, which will affect the user experience.&lt;/p&gt;
+&lt;p&gt;The server has enabled the 2FA, login using account password + one-time verification code. The following is the configuration method.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download an App: the UIC VPN is also need a token to login, you can use the app (ndkey 宁顿令牌) to be your 2FA client validator.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Server Account Configuration: the server uses the google-authenticator module to implement 2FA for SSH. Configure server 2FA to use commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;google-authenticator
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will generate a secret key under the server account. During the generation process, you will be asked a series of questions. It is recommended to read it carefully. Personally, I recommend all of them you can just input y. After the first question, a command line window displays a QR code. At this point, take out your phone to open ndkey, select “Add Account” or just press “+” and scan the code. After successfully scanning the code, you can see that ndkey will continue to generate six-digit verification codes, and each verification code will expire after 30s.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Test: after the configration, you can just open a new windows for a test:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ ssh user_name@hpc.uicstat.com
+$ Password:                   &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;&amp;lt; input your original password&lt;/span&gt;
+$ Verification code:          &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# &amp;lt;&amp;lt; input your validation code on your phone&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+
+    &lt;ol&gt;
+&lt;li&gt;After the server account is generated and configured, the secret key will be stored in the .google_authenticator file under HOME. If you want to close 2FA, delete this file. You can also back up this file to your local.&lt;/li&gt;
+&lt;li&gt;No internet connection is required to use 2FA. The 2FA code is generated based on the time, as long as the server time and the phone time are consistent.&lt;/li&gt;
+&lt;li&gt;If you access to the cluster via SSH key for authentication instead of password authentication, 2FA is not required (regardless of whether the server is configured). This setting is based on the assumption that the local private key is trusted.&lt;/li&gt;
+&lt;li&gt;If you lose your 2FA key, please contact the administrator to unbind your 2FA token.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Environment Module</title>
+      <link>/docs/getting-started/environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/environment/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;“Environment Modules” are the mechaism by which much of the software is made available to the users of USBC. The Modules package is a tool that simplifies shell initialization and lets users easily modify theire environment during a session using modulefiles.&lt;/p&gt;
+&lt;h2 id=&#34;check-the-avaiable-module-and-loaded-module&#34;&gt;Check the Avaiable Module and Loaded Module&lt;/h2&gt;
+&lt;p&gt;Before running the code, you can list all (loaded and unlabled modules) on Bayes cluster using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Compute2030005000:~$ module avail
+------------------------------------------ /usr/share/modules/modulefiles ------------------------------------------
+compiler/cuda/10.2          computing/conda/5.3.1  computing/MATLAB/2021b
+compiler/mpi/openmpi/4.1.1  computing/gap/4.11.1   computing/SageMath/9.3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;load-and-unload-module&#34;&gt;Load and Unload Module&lt;/h2&gt;
+&lt;p&gt;You can then load a module by using &lt;code&gt;module load &lt;/code&gt; and use &lt;code&gt;module list&lt;/code&gt; to check loaded module:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Compute2030005000:~$ module load computing/MATLAB/2021b
+user_name@Compute2030005000:~$ module list
+Currently Loaded Modulefiles:
+ 1&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; computing/MATLAB/2021b
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you want to stoping using a module (by undoing the changes that loading that module made to your environment):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Compute2030005000:~$ module unload computing/MATLAB/2021b
+user_name@Compute2030005000:~$ module list
+No Modulefiles Currently Loaded.
+user_name@Compute2030005000:~$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Notice&lt;/h4&gt;
+
+    &lt;code&gt;module&lt;/code&gt; can be only used in the Compute Node.
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Interactive Tasks</title>
+      <link>/docs/getting-started/interactive_task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/interactive_task/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;submit-interactive-tasks&#34;&gt;Submit interactive tasks&lt;/h2&gt;
+&lt;p&gt;An interactive task is a special queue task. In this mode, users can log in to a computing node directly, and all operations are performed on this node. This function is mainly convenient for users to debug the program on the server so that they can see the output of the program in real time.&lt;/p&gt;
+&lt;p&gt;You need to use the &lt;code&gt;salloc&lt;/code&gt; command to allocate the resources needed for interactive tasks. Its syntax is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ salloc &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt;Apply &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; resources&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You may specify the requested resource in the form of options, which are basically the same as those in the SLURM script. For example, you can apply for resources in the following ways:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Control:~$ salloc -N &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; --cpus-per-task&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt; -t 5:00 -p CPU-Compute
+salloc: Granted job allocation &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;411&lt;/span&gt;
+user_name@Control:~$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After successful execution, SLURM will give you a new shell. Note that the node where the user is located is still the master node at this time. You need to manually switch to the compute node using the &lt;code&gt;slink&lt;/code&gt; command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Control:~$ salloc -N &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; --cpus-per-task&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4&lt;/span&gt; -t 5:00 -p CPU-Compute
+salloc: Granted job allocation &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2294&lt;/span&gt;
+salloc: Waiting &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; resource configuration
+salloc: Nodes Compute2030005001 are ready &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; job
+use_name@Control:~slink
+user_name@Compute2030005001:~$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As shown above, after executing &lt;code&gt;salloc&lt;/code&gt;, SLURM automatically allocates the job number and informs which node is available. After successfully obtaining resources and login via the ssh, you get a new shell (Line 5). At this time, the user can directly switch to the target node comput1 to perform the computing task.&lt;/p&gt;
+&lt;p&gt;After the interactive calculation is completed, use exit to exit the node, and then execute exit to exit the shell allocated by SLURM to end this interactive task. SLURM will inform you that the resources of the interactive task have been released.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Compute2030005001:~$ &lt;span style=&#34;color:#204a87&#34;&gt;exit&lt;/span&gt;                 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# This step is to exit CPU-compute-1&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;exit&lt;/span&gt;
+Connection to compute2030005003 closed.
+user_name@Control:~$ &lt;span style=&#34;color:#204a87&#34;&gt;exit&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;exit&lt;/span&gt;
+salloc: Relinquishing job allocation &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2294&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Resources are also released when exiting&lt;/span&gt;
+user_name@Control:~$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, you will return to the Control node.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Note&lt;/h4&gt;
+
+    Remember: Users are not allowed to login to compute nodes unless they have a job running there. If you SSH to a compute node without any active job allocation, you will be greeted by the following message:
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Notice&lt;/h4&gt;
+
+    &lt;p&gt;&lt;code&gt;slink&lt;/code&gt; or &lt;code&gt;ssh&lt;/code&gt; without a task is prohibited:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;user_name@Control:~$ ssh Compute2030005001
+Access denied: user user_name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;uid&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;xxx&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; has no active &lt;span style=&#34;color:#204a87&#34;&gt;jobs&lt;/span&gt; on this node.
+Connection closed by Compute2030005001 port &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;22&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Batch Tasks</title>
+      <link>/docs/getting-started/batch_task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/batch_task/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To submit a batch task on the cluster, it requires a SLURM script to clarify the requested resources and the programs to run.&lt;/p&gt;
+&lt;h3 id=&#34;check-available-resource&#34;&gt;Check Available Resource&lt;/h3&gt;
+&lt;p&gt;Before the submission, please check the compute nodes’ status to insure itthey hashave enough resource to run the upcoming jobs.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Control:~$ sinfo
+PARTITION      AVAIL  TIMELIMIT  NODES  STATE NODELIST
+CPU-Compute-1*    up 1-00:00:00      &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;   idle Compute2030005000
+CPU-Compute-2     up 7-00:00:00      &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;   idle Compute2030005001
+GPU-Compute-1     up 7-00:00:00      &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;    mix Compute2030005002
+GPU-Compute-2     up   infinite      &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;  alloc Compute2030005003
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As the example shown, sinfo can roughly shows the information of all the partitions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the STATE column is “idle”, it means the node is in an idle state&lt;/li&gt;
+&lt;li&gt;If the STATE column is “alloc”, it means the node is full&lt;/li&gt;
+&lt;li&gt;If the STATE column is “mix”, it means that the node is occupied by someone, but it still has remaining resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can also use the pestat to chekc hte detail of each node:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Control:~$ pestat
+Hostname       Partition     Node Num_CPU  CPUload  Memsize  Freemem  Joblist
+                            State Use/Tot              &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;MB&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;     &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;MB&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;  JobId User ...
+Compute2030005000  CPU-Compute-1*     idle   &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;40&lt;/span&gt;    1.11*   &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;128000&lt;/span&gt;    &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;35643&lt;/span&gt;
+Compute2030005001   CPU-Compute-2     idle   &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;40&lt;/span&gt;    0.11    &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;128000&lt;/span&gt;    &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;34578&lt;/span&gt;
+Compute2030005002   GPU-Compute-1      mix   &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt;  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;40&lt;/span&gt;   16.30    &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;128000&lt;/span&gt;    37085	 &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1422&lt;/span&gt; user_2
+Compute2030005003   GPU-Compute-2    alloc  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;40&lt;/span&gt;  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;40&lt;/span&gt;   35.50*   &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;128000&lt;/span&gt;    &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;29748&lt;/span&gt;  &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1454&lt;/span&gt; user_1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;submit-a-batch-task&#34;&gt;Submit a Batch Task&lt;/h3&gt;
+&lt;p&gt;After you have generate a proper SLURM script, you can eaily submit your job by using &lt;code&gt;sbatch&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Control:~$ sbatch run.slurm
+Summited batch job &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4100&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;check-tasks-status&#34;&gt;Check Task&amp;rsquo;s Status&lt;/h3&gt;
+&lt;p&gt;After the submission, you can use &lt;code&gt;squeue&lt;/code&gt; to check the status of your task:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;user_name@Control:~$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;REASON&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+              &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1454&lt;/span&gt; GPU-Compu 		 &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt;   user_1  R 22-17:04:56      &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; Compute2030005003
+              &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1422&lt;/span&gt; GPU-Compu 		debug   user_2  R       01:30      &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; Compute2030005002
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;squeue -l&lt;/code&gt;: can show detailed information&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;squeue -u user_name&lt;/code&gt;: only show user_name&amp;rsquo;s task&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;squeue -t state&lt;/code&gt;: only shows the task with “state” status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To cancel task:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;scancel jobid&lt;/code&gt;: cancel the task with JobID = jobid&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scancel -u user_name&lt;/code&gt;: cancel all the tasks belong to user_name&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scancel -s state&lt;/code&gt;: Delete all the tasks with “state” status&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Notice&lt;/h4&gt;
+
+    User can only cancel its only task, not others!
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Software Installation</title>
+      <link>/docs/getting-started/software_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/software_install/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;In default situation, you cannot install software via &lt;code&gt;sudo&lt;/code&gt; as normal user are not authorized. However, user can install their needed software under their own home directory. Here are some example:&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;install-python-via-anaconda&#34;&gt;Install Python via Anaconda&lt;/h2&gt;
+&lt;p&gt;Conda can create a virtual python environment, and it easily install packages. This created virtual individual environment can solve the python&amp;rsquo;s version and requirement problem and it is fully controlled by the user you can install packages without root permission&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate Anaconda environment&lt;/li&gt;
+&lt;li&gt;Create an environment with conda&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# connect to the Compute Node&lt;/span&gt;
+salloc &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; slink
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate anaconda PATH&lt;/span&gt;
+module load computing/conda/5.3.1
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# using conda&lt;/span&gt;
+proxychains4 conda create -name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;py_env &lt;span style=&#34;color:#000&#34;&gt;python&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;3.7
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate py_env environment&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; activate py_env 
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# use Beigjing Foreign Studies Univerisy&amp;#39;s  Mirrors (https://mirrors.bfsu.edu.cn)&lt;/span&gt;
+proxychains4 python -m pip config &lt;span style=&#34;color:#204a87&#34;&gt;set&lt;/span&gt; global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;## run program&lt;/span&gt;
+python main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-r-via-anaconda&#34;&gt;Install R via Anaconda&lt;/h2&gt;
+&lt;p&gt;Conda can create a virtual R environment, and it easily install packages. This created virtual individual environment can solve the R&amp;rsquo;s version and requirement problem and it is fully controlled by the user you can install packages without root permission&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate Anaconda environment&lt;/li&gt;
+&lt;li&gt;Create an environment with conda&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate anaconda PATH&lt;/span&gt;
+module load computing/conda/5.3.1
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# using conda&lt;/span&gt;
+proxychains4 conda create -n r_env
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate r_env&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; activate r_env
+proxychains4 conda install -c conda-forge r-base &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#or proxychains4 conda install -c conda-forge/label/gcc7 r-base&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# or proxychains4 conda install r-base&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;## run program&lt;/span&gt;
+R
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;: sometimes we may use devtools::install_github() to install R pacakge directly from GitHub, however, the connection between the school intranet and GitHub server is not robust enough. Here is a solution:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;install package via the github proxy&lt;/li&gt;
+&lt;li&gt;use BFSU CRAN Mirrors: &lt;code&gt;install.packages(&amp;quot;{package_name}&amp;quot;, repos=&amp;quot;https://mirrors.bfsu.edu.cn/CRAN/&amp;quot;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install-julia-via-anaconda&#34;&gt;Install Julia via Anaconda&lt;/h2&gt;
+&lt;p&gt;Conda can create a virtual Julia environment, and it easily install packages.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Activate Anaconda environment&lt;/li&gt;
+&lt;li&gt;Create an environment with conda&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate anaconda PATH&lt;/span&gt;
+module load computing/conda/5.3.1
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# using conda&lt;/span&gt;
+proxychains4 conda create -name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;julia_env julia
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# activate py_env environment&lt;/span&gt;
+&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; activate py_env 
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;## run program&lt;/span&gt;
+julia test.jl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-packages-wihout-sudo-privileges&#34;&gt;Install packages wihout sudo privileges&lt;/h2&gt;
+&lt;p&gt;User withou sudo priviledges need to compile the package from source, for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;install from &lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt;
+apt-get &lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; PACKAGE
+./configure --prefix&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$HOME&lt;/span&gt;/&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;package-PATH&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File Transfer</title>
+      <link>/docs/getting-started/file_transfer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/getting-started/file_transfer/</guid>
+      <description>
+        
+        
+        &lt;p&gt;After obtaining an account one of the things that you may wish to do is get data transferred to or from the Bayes cluster. Two of the most widely available tools for secure file transfer are &lt;a href=&#34;https://en.wikipedia.org/wiki/Secure_copy_protocol&#34;&gt;SCP (Secure Copy)&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol&#34;&gt;SFTP (Secure File Transfer Protocol)&lt;/a&gt; which utilize the SSH protocol to implement security. While SCP is a simple, non-interactive command line tool, it is often a more suitable choice when setting up unattended file transfers using scripts. Alternatively, SFTP is an interactive tool which offers features like remote file listing, copying, deleting, directory creation, etc.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For using the SCP:
+&lt;ul&gt;
+&lt;li&gt;Copy file (&lt;code&gt;file_name.file&lt;/code&gt;) from local to the cluster: &lt;code&gt;scp /path_of_local/file_name.file user_name@hpc.uicstat.com:/path_of_remote/file_name.file&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Get file (&lt;code&gt;file_name.file&lt;/code&gt;) from the cluster to local: &lt;code&gt;scp user_name@hpc.uicstat.com:/path_of_remote/file_name.file /path_of_local/file_name.file&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;For using the SFTP:
+&lt;ul&gt;
+&lt;li&gt;Copy file (&lt;code&gt;file_name.file&lt;/code&gt;) from local to the cluster:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r,&#34; data-lang=&#34;{r,&#34;&gt;sftp user_name@hpc.uicstat.com
+put /path_of_remote/file_name.file
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Get file (&lt;code&gt;file_name.file&lt;/code&gt;) from the cluster to local:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-{r,&#34; data-lang=&#34;{r,&#34;&gt;sftp user_name@hpc.uicstat.com
+get /path_of_remote/file_name.file
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

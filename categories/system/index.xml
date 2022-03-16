@@ -1,0 +1,213 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIC-STAT HPC – System</title>
+    <link>/categories/system/</link>
+    <description>Recent content in System on UIC-STAT HPC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/categories/system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Services: Supported Software</title>
+      <link>/services/software/introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/services/software/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We provide programming and configuration support for High Performance Computing software. Our services include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Software installation (Licensed or Open-source)&lt;/li&gt;
+&lt;li&gt;Troubleshooting malfunctioning programs&lt;/li&gt;
+&lt;li&gt;Developing new parallel codes&lt;/li&gt;
+&lt;li&gt;Parallelizing existing serial codes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We support several implementations of MPI, OpenMP and MATLAB Parallelization.&lt;/p&gt;
+&lt;h2 id=&#34;software-list&#34;&gt;Software List&lt;/h2&gt;
+&lt;h3 id=&#34;compiler&#34;&gt;Compiler&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Software&lt;/th&gt;
+&lt;th&gt;Synopsis&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;GCC&lt;/td&gt;
+&lt;td&gt;The GNU Compiler Collectiong&lt;/td&gt;
+&lt;td&gt;7.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CUDA&lt;/td&gt;
+&lt;td&gt;A parallel computing platform and application programming interface&lt;/td&gt;
+&lt;td&gt;10.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OpenMP&lt;/td&gt;
+&lt;td&gt;An application programming interface for multiprocessing programming&lt;/td&gt;
+&lt;td&gt;5.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OpenMPI&lt;/td&gt;
+&lt;td&gt;A Message Passing Interface Library&lt;/td&gt;
+&lt;td&gt;4.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Software&lt;/th&gt;
+&lt;th&gt;Synopsis&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;R&lt;/td&gt;
+&lt;td&gt;Programming environment&lt;/td&gt;
+&lt;td&gt;3.5+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GAP&lt;/td&gt;
+&lt;td&gt;a System for Computational Discrete Algebra&lt;/td&gt;
+&lt;td&gt;4.11.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;General-purpose scripting language&lt;/td&gt;
+&lt;td&gt;3.0+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MATLAB&lt;/td&gt;
+&lt;td&gt;A programming language and numeric computing environment developed by MathWorks&lt;/td&gt;
+&lt;td&gt;R2021b, R2022a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Anaonda&lt;/td&gt;
+&lt;td&gt;A distribution of the Python and R programming languages for scientific computing&lt;/td&gt;
+&lt;td&gt;5.3.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SageMath&lt;/td&gt;
+&lt;td&gt;A computer algebra system (CAS) with features covering many aspects of mathematics&lt;/td&gt;
+&lt;td&gt;9.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Systems: System Information</title>
+      <link>/systems/bayes/introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/systems/bayes/introduction/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The Bayes cluster is intended for running smaller jobs, as well as developing, debugging, and testing codes. It is a self-built and hosted  beowulf cluster. Each compute node has 20 cores 2.20 GHz Intel Skylake CPU-cores and 256 GB RAM. There are also two nodes with GPUs (NVIDIA-P100). For more details see the Hardware Configuration section below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NodeName&lt;/th&gt;
+&lt;th&gt;CPU&lt;/th&gt;
+&lt;th&gt;Memory&lt;/th&gt;
+&lt;th&gt;GPU&lt;/th&gt;
+&lt;th&gt;Storage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;240GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005000&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;600GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005001&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;3.0 TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005002&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;Tesla P100 12GB&lt;/td&gt;
+&lt;td&gt;4.8TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005003&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;Tesla P100 12GB&lt;/td&gt;
+&lt;td&gt;4.8TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;how-to-access-the-bayes-cluster&#34;&gt;How to Access the Bayes Cluster&lt;/h2&gt;
+&lt;p&gt;You have to request an account before using the Bayes cluster, and then log in through SSH.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Requesting Access to Bayes: if you would like an account on Bayes, please fill out the &lt;a href=&#34;https://baidu.com&#34; style=&#34;text-decoration: none;&#34;&gt;Application&lt;/a&gt; for to request an account&lt;/li&gt;
+&lt;li&gt;Logging into Bayes: &lt;code style=&#34;color: gray&#34;&gt;ssh &amp;lt;user_name&amp;gt;@hpc.uicstat.com&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;how-to-work-on-the-bayes-cluster&#34;&gt;How to work on the Bayes Cluster&lt;/h2&gt;
+&lt;p&gt;Since Bayes Cluster is runing a Linux system, knowing some basic Linux commands is hightly recommended. For an introduction to navigating a Linux system, here are some reference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://training.linuxfoundation.org/training/introduction-to-linux/&#34;&gt;Introduction to Linux&lt;/a&gt; | by Linux Foundatation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/uschpc/workshop-intro-linux&#34;&gt;Introduction to Linux and Command Line&lt;/a&gt; | by USC-HPC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then, please read our &lt;a href=&#34;/document/introduction/&#34;&gt;guideline of the Bayes cluster&lt;/a&gt; to know more about the file systems, module system, and scheduling system running on Bayes cluster.&lt;/p&gt;
+&lt;h2 id=&#34;notice&#34;&gt;Notice&lt;/h2&gt;
+&lt;p&gt;The control node on Bayes should be used for the basic usage (log in, submit your job, file transfer, and etc.) only. &lt;strong&gt;No jobs should be run on the control node&lt;/strong&gt;, other than brief tests that last no more than a few minutes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Services: Tutorial of Research Computing</title>
+      <link>/services/tutorial/introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/services/tutorial/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The tutorial is an sharing event organized by USBC, and all UIC students, faculty are welcome to attend. In general, the tutorial will share about the technique that can be used your daily usage of computer and USBC, usually focusing on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shell Tools, Scripting and Command-Linear Environment&lt;/li&gt;
+&lt;li&gt;Editors&lt;/li&gt;
+&lt;li&gt;Version Control (Git)&lt;/li&gt;
+&lt;li&gt;File System and Security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, please contact &lt;a href=&#34;mailto:bayes@uicstat.com&#34;&gt;&lt;a href=&#34;mailto:bayes@uicstat.com&#34;&gt;bayes@uicstat.com&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

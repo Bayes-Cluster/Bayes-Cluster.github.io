@@ -1,14 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Systems on UIC-STAT HPC</title>
+    <title>UIC-STAT HPC – Systems</title>
     <link>/systems/</link>
     <description>Recent content in Systems on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/systems/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/systems/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Systems: System Information</title>
+      <link>/systems/bayes/introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/systems/bayes/introduction/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The Bayes cluster is intended for running smaller jobs, as well as developing, debugging, and testing codes. It is a self-built and hosted  beowulf cluster. Each compute node has 20 cores 2.20 GHz Intel Skylake CPU-cores and 256 GB RAM. There are also two nodes with GPUs (NVIDIA-P100). For more details see the Hardware Configuration section below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NodeName&lt;/th&gt;
+&lt;th&gt;CPU&lt;/th&gt;
+&lt;th&gt;Memory&lt;/th&gt;
+&lt;th&gt;GPU&lt;/th&gt;
+&lt;th&gt;Storage&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Control&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;240GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005000&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;600GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005001&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;NA&lt;/td&gt;
+&lt;td&gt;3.0 TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005002&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;Tesla P100 12GB&lt;/td&gt;
+&lt;td&gt;4.8TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Compute2030005003&lt;/td&gt;
+&lt;td&gt;20 cores&lt;/td&gt;
+&lt;td&gt;128GB&lt;/td&gt;
+&lt;td&gt;Tesla P100 12GB&lt;/td&gt;
+&lt;td&gt;4.8TB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;how-to-access-the-bayes-cluster&#34;&gt;How to Access the Bayes Cluster&lt;/h2&gt;
+&lt;p&gt;You have to request an account before using the Bayes cluster, and then log in through SSH.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Requesting Access to Bayes: if you would like an account on Bayes, please fill out the &lt;a href=&#34;https://baidu.com&#34; style=&#34;text-decoration: none;&#34;&gt;Application&lt;/a&gt; for to request an account&lt;/li&gt;
+&lt;li&gt;Logging into Bayes: &lt;code style=&#34;color: gray&#34;&gt;ssh &amp;lt;user_name&amp;gt;@hpc.uicstat.com&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;how-to-work-on-the-bayes-cluster&#34;&gt;How to work on the Bayes Cluster&lt;/h2&gt;
+&lt;p&gt;Since Bayes Cluster is runing a Linux system, knowing some basic Linux commands is hightly recommended. For an introduction to navigating a Linux system, here are some reference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://training.linuxfoundation.org/training/introduction-to-linux/&#34;&gt;Introduction to Linux&lt;/a&gt; | by Linux Foundatation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/uschpc/workshop-intro-linux&#34;&gt;Introduction to Linux and Command Line&lt;/a&gt; | by USC-HPC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then, please read our &lt;a href=&#34;/document/introduction/&#34;&gt;guideline of the Bayes cluster&lt;/a&gt; to know more about the file systems, module system, and scheduling system running on Bayes cluster.&lt;/p&gt;
+&lt;h2 id=&#34;notice&#34;&gt;Notice&lt;/h2&gt;
+&lt;p&gt;The control node on Bayes should be used for the basic usage (log in, submit your job, file transfer, and etc.) only. &lt;strong&gt;No jobs should be run on the control node&lt;/strong&gt;, other than brief tests that last no more than a few minutes.&lt;/p&gt;
+
+      </description>
+    </item>
     
   </channel>
 </rss>

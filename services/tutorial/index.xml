@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIC-STAT HPC – Tutorial of Research Computing</title>
+    <link>/services/tutorial/</link>
+    <description>Recent content in Tutorial of Research Computing on UIC-STAT HPC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 04 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/services/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Services: Tutorial of Research Computing</title>
+      <link>/services/tutorial/introduction/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/services/tutorial/introduction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The tutorial is an sharing event organized by USBC, and all UIC students, faculty are welcome to attend. In general, the tutorial will share about the technique that can be used your daily usage of computer and USBC, usually focusing on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shell Tools, Scripting and Command-Linear Environment&lt;/li&gt;
+&lt;li&gt;Editors&lt;/li&gt;
+&lt;li&gt;Version Control (Git)&lt;/li&gt;
+&lt;li&gt;File System and Security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, please contact &lt;a href=&#34;mailto:bayes@uicstat.com&#34;&gt;&lt;a href=&#34;mailto:bayes@uicstat.com&#34;&gt;bayes@uicstat.com&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

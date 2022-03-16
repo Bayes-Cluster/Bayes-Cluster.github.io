@@ -1,95 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homepage on UIC-STAT HPC</title>
+    <title>UIC-STAT HPC – UIC-STAT HPC</title>
     <link>/</link>
-    <description>Recent content in Homepage on UIC-STAT HPC</description>
+    <description>Recent content on UIC-STAT HPC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Get Started Guide</title>
-      <link>/document/introduction/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/document/introduction/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial of Research Computing</title>
-      <link>/services/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/tutorial/</guid>
-      <description>Tutorial for Research Computing The tutorial is an sharing event organized by USBC, and all UIC students, faculty are welcome to attend. In general, the tutorial will share about the technique that can be used your daily usage of computer and USBC, usually focusing on:
- Shell Tools, Scripting and Command-Linear Environment Editors Version Control (Git) File System and Security  For more information, please contact bayes@uicstat.com</description>
-    </item>
     
-    <item>
-      <title>Workshops &amp; Live Training</title>
-      <link>/services/workshop/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/services/workshop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Supported Software</title>
-      <link>/services/software/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/services/software/</guid>
-      <description>We provide programming and configuration support for High Performance Computing software. Our services include:
- Software installation (Licensed or Open-source) Troubleshooting malfunctioning programs Developing new parallel codes Parallelizing existing serial codes  We support several implementations of MPI, OpenMP and MATLAB Parallelization.
-Software List Compiler   Software Synopsis Version     GCC The GNU Compiler Collectiong 7.3   OpenMPI A Message Passing Interface Library 4.1   OpenMP An application programming interface for multiprocessing programming 5.</description>
-    </item>
-    
-    <item>
-      <title>CodeHub - Generation II</title>
-      <link>/projects/codehubgen2/</link>
-      <pubDate>Sat, 12 Mar 2022 00:00:00 +0800</pubDate>
-      
-      <guid>/projects/codehubgen2/</guid>
-      <description>CodeHub Gen II Develop with Codespace
-Tech Stack  Frontend: Bootstrap5  Data Dashboard: bokeh Editor: Manacco Editor Web Terminal: Xterm.js   Backend: Flask Database: MariaDB  Components Basically, the Code-Hub has(will have) these three main components:
- User Management: Authentication, Authorization and Questioning System  account application form collection Single Sign ON (OpenLDAP + JWT) Time-based One-Time Password Ticket System   System Security Cluster Status and User (danger operation) Monitoring  Server current usage and historical usage - (optional: netdata) Auditing (Asciinema) Auto Blocking (Crypto-mining and etc.</description>
-    </item>
-    
-    <item>
-      <title>Scheduled Maintenance Announcement</title>
-      <link>/announcement/2022-03-08-scheduled-maintenance/</link>
-      <pubDate>Wed, 23 Feb 2022 00:00:00 +0800</pubDate>
-      
-      <guid>/announcement/2022-03-08-scheduled-maintenance/</guid>
-      <description>Dear All,
-Please be informed that USBC Maintenance Group will schedule an annual maintenance and service upgrade for the UIC-STAT Bayes Cluster from February 24, 2022 00:00 AM to March1, 2022 00:00AM March 8, 2022 00:00AM. During this period, USBC will be temporarily suspended.
-If you have any question, please contact us. Sorry for the inconvenience.
-Sincerely, USBC Maintenance Group Feb 23, 2022</description>
-    </item>
-    
-    <item>
-      <title>Email</title>
-      <link>/contacts/email/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/contacts/email/</guid>
-      <description> Want to leave a comment or join us: bayes@uicstat.com Want to cooperate with us: bayes@uicstat.comReport bug for the system: issues@uicstat.com  </description>
-    </item>
-    
-    <item>
-      <title>GitHub Organization</title>
-      <link>/contacts/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/contacts/github/</guid>
-      <description> : Bayes-Cluster </description>
-    </item>
     
   </channel>
 </rss>

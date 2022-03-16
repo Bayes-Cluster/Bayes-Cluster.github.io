@@ -1,0 +1,64 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIC-STAT HPC – Achievement</title>
+    <link>/research/achievement/</link>
+    <description>Recent content in Achievement on UIC-STAT HPC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/research/achievement/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Research: Acknowledgement</title>
+      <link>/research/achievement/acknowledgement/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/research/achievement/acknowledgement/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Please don&amp;rsquo;t forget to acknowledge the role that BNU-HKBU United International College Statistics&amp;rsquo;s HPC resources have played in your research and testing. We appreciate your conscientiousness in this matter.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The computations in this paper were performed using the Bayes Cluster (USBC) provided by Department of Statistics, BNU-HKBU United International College.
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Research: Achievement</title>
+      <link>/research/achievement/achievement/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/research/achievement/achievement/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Publication Information&lt;/th&gt;
+&lt;th&gt;Scimago Matrix&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lai, J., Weng, L. C., Peng, X., &amp;amp; Fang, K. T. (2022). Construction of symmetric orthogonal designs with deep Q-network and orthogonal complementary design. Computational Statistics &amp;amp; Data Analysis, 107448.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=28461&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=28461&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Liu, J. J., Tsang, K. T., &amp;amp; Deng, Y. H. (2022). A variant RSA acceleration with parallelisation. International Journal of Parallel, Emergent and Distributed Systems, 1-15.&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.scimagojr.com/journalsearch.php?q=100147332&amp;amp;tip=sid&amp;amp;exact=no&#34; title=&#34;SCImago Journal &amp;amp; Country Rank&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;https://www.scimagojr.com/journal_img.php?id=100147332&#34; alt=&#34;SCImago Journal &amp;amp; Country Rank&#34;  /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
