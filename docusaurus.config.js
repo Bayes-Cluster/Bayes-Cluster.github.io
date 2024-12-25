@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Frist Generation High Performance Computing Cluster in BNU-HKBU UIC',
+  title: 'First Generation High Performance Computing Cluster in BNU-HKBU UIC',
   tagline: 'and we call it Bayes Cluster',
   favicon: 'img/favicon.ico',
 
