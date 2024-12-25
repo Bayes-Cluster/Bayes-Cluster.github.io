@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Frist Generation High Performance Computing Cluster in BNU-HKBU UIC Blog</title>
+        <link>https://bayes-cluster.github.io/blog</link>
+        <description>Frist Generation High Performance Computing Cluster in BNU-HKBU UIC Blog</description>
+        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Join Us]]></title>
+            <link>https://bayes-cluster.github.io/blog/join-us</link>
+            <guid>https://bayes-cluster.github.io/blog/join-us</guid>
+            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[We are now opening for those who want to join us (UIC-STAT Bayes Computing Cluster Maintenance Group anchored at the BNU-HKBU United International College Department of Statistics).]]></description>
+            <content:encoded><![CDATA[<p>We are now opening for those who want to join us (UIC-STAT Bayes Computing Cluster Maintenance Group anchored at the BNU-HKBU United International College Department of Statistics).</p>
+<p>Started from 2018, USBC Maintenance Group provides technical support for UIC-STAT servers. In 2020, it successfully built the first computing cluster USBC, and over 100 researchers and students from department of statistics and data science using this cluster to conduct their research and projects.</p>
+<p>The group are now focussing on these five key areas:</p>
+<ul>
+<li>high-performance computing</li>
+<li>bio-informatic analysis</li>
+<li>AI-oriented computing</li>
+<li>Computing platform DevOps (Frontend and Backend Development)</li>
+<li>Distributed storage platform DevOps</li>
+</ul>]]></content:encoded>
+            <category>recruit</category>
+            <category>Linux</category>
+            <category>AI</category>
+            <category>GPGPU</category>
+            <category>USBC</category>
+        </item>
+    </channel>
+</rss>

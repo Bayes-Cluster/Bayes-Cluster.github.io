@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://bayes-cluster.github.io/blog</id>
+    <title>Frist Generation High Performance Computing Cluster in BNU-HKBU UIC Blog</title>
+    <updated>2021-08-26T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://bayes-cluster.github.io/blog"/>
+    <subtitle>Frist Generation High Performance Computing Cluster in BNU-HKBU UIC Blog</subtitle>
+    <icon>https://bayes-cluster.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Join Us]]></title>
+        <id>https://bayes-cluster.github.io/blog/join-us</id>
+        <link href="https://bayes-cluster.github.io/blog/join-us"/>
+        <updated>2021-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are now opening for those who want to join us (UIC-STAT Bayes Computing Cluster Maintenance Group anchored at the BNU-HKBU United International College Department of Statistics).]]></summary>
+        <content type="html"><![CDATA[<p>We are now opening for those who want to join us (UIC-STAT Bayes Computing Cluster Maintenance Group anchored at the BNU-HKBU United International College Department of Statistics).</p>
+<p>Started from 2018, USBC Maintenance Group provides technical support for UIC-STAT servers. In 2020, it successfully built the first computing cluster USBC, and over 100 researchers and students from department of statistics and data science using this cluster to conduct their research and projects.</p>
+<p>The group are now focussing on these five key areas:</p>
+<ul>
+<li>high-performance computing</li>
+<li>bio-informatic analysis</li>
+<li>AI-oriented computing</li>
+<li>Computing platform DevOps (Frontend and Backend Development)</li>
+<li>Distributed storage platform DevOps</li>
+</ul>]]></content>
+        <author>
+            <name>Junjie Liu</name>
+            <uri>https://github.com/TerenceLiu98</uri>
+        </author>
+        <category label="recruit" term="recruit"/>
+        <category label="Linux" term="Linux"/>
+        <category label="AI" term="AI"/>
+        <category label="GPGPU" term="GPGPU"/>
+        <category label="USBC" term="USBC"/>
+    </entry>
+</feed>
