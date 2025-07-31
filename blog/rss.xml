@@ -4,10 +4,58 @@
         <title>First Generation High Performance Computing Cluster in BNU-HKBU UIC Blog</title>
         <link>https://bayes-cluster.github.io/blog</link>
         <description>First Generation High Performance Computing Cluster in BNU-HKBU UIC Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 31 Jul 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[From Bayes to Chebyshev]]></title>
+            <link>https://bayes-cluster.github.io/blog/chebyshev</link>
+            <guid>https://bayes-cluster.github.io/blog/chebyshev</guid>
+            <pubDate>Thu, 31 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Between 2025 and 2026, all users will transition from the Bayes cluster to the new Chebyshev cluster, and from SLURM to Kubernetes (K8S) as the primary platform for computational workloads.]]></description>
+            <content:encoded><![CDATA[<p>Between 2025 and 2026, all users will transition from the Bayes cluster to the new Chebyshev cluster, and from SLURM to Kubernetes (K8S) as the primary platform for computational workloads.</p>
+<p>This means moving away from using SLURM-based scheduling and the Bayes hardware infrastructure, and adopting a containerized, cloud-native workflow powered by K8S on Chebyshev. The migration will be carried out in phases over the next two years, overseen by a dedicated project team. The project is currently in its initial phase, with detailed planning scheduled to begin in August 2025.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-make-this-change">Why make this change?<a href="https://bayes-cluster.github.io/blog/chebyshev#why-make-this-change" class="hash-link" aria-label="Direct link to Why make this change?" title="Direct link to Why make this change?">​</a></h2>
+<ol>
+<li>
+<p>Greater Scalability &amp; Modernized Workflow
+Kubernetes offers more flexibility and scalability than SLURM, enabling modern, container-based workflows and streamlined job management.</p>
+</li>
+<li>
+<p>A Strategic Computational Platform
+Chebyshev is designed for next-generation workloads, including support for high-throughput computing, GPU acceleration, and cloud-native integration.</p>
+</li>
+<li>
+<p>Better Support for Researchers
+Kubernetes is increasingly the standard among research institutions and industry partners, enabling better compatibility and collaboration.</p>
+</li>
+<li>
+<p>Enhanced User Experience for All
+Chebyshev and K8S provide a consistent user environment across platforms and locations, improving access for both local and international researchers.</p>
+</li>
+<li>
+<p>Improved Security and Efficiency
+The new platform supports advanced authentication methods and automated resource orchestration, improving job security, monitoring, and overall efficiency.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-outcomes">Project Outcomes<a href="https://bayes-cluster.github.io/blog/chebyshev#project-outcomes" class="hash-link" aria-label="Direct link to Project Outcomes" title="Direct link to Project Outcomes">​</a></h2>
+<p>The USBC Maintenance Group anticipates clear benefits for all users of computational resources:</p>
+<ul>
+<li>Enabling greater consistency in how computational workflows are developed and deployed, through standardized, container-based environments and reproducible configurations.</li>
+<li>Leveraging the advanced capabilities of Kubernetes and Chebyshev to enhance resource management, scalability, and system security.</li>
+<li>Supporting improved collaboration with both internal and external research teams by aligning with widely adopted cloud-native infrastructure and tooling.</li>
+<li>Ensuring a measurable uplift in technical skills and digital fluency, especially in areas like container orchestration, job scheduling, and reproducible science.</li>
+</ul>
+<table><thead><tr><th>From</th><th>To</th></tr></thead><tbody><tr><td>Bayes Cluster</td><td>Chebyshev Cluster</td></tr><tr><td>SLURM Job Scheduler</td><td>Kubernetes + Volcano Scheduler</td></tr><tr><td>Shell-based scripts</td><td>yaml-based scripts</td></tr><tr><td>Static environments</td><td>Dynamic, reproducible containers</td></tr><tr><td>Manual scaling &amp; resource allocation</td><td>Automated orchestration &amp; scaling</td></tr><tr><td>On-prem-only jobs</td><td>Hybrid/cloud-ready workflows</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-dates">Key Dates<a href="https://bayes-cluster.github.io/blog/chebyshev#key-dates" class="hash-link" aria-label="Direct link to Key Dates" title="Direct link to Key Dates">​</a></h2>
+<div style="max-width:600px;margin:1.5rem 0"><div style="margin-bottom:1.5rem"><h3 style="color:#0078d4;margin-bottom:0.25rem">August 2025</h3><p>Project mobilisation and governance structure to be agreed and put in place.</p></div><div style="margin-bottom:1.5rem"><h3 style="color:#0078d4;margin-bottom:0.25rem">Autumn 2025</h3><p>Multifactor authentication is introduced for all user for better security.</p></div><div style="margin-bottom:1.5rem"><h3 style="color:#0078d4;margin-bottom:0.25rem">Winter 2025</h3><p>Some staff switch to the Chebyshev as <u><i>early adopters</i></u>.</p></div><div style="margin-bottom:1.5rem"><h3 style="color:#0078d4;margin-bottom:0.25rem">Spring 2026</h3><p>Staff migration to the Chebyshev, on a phased basis.</p></div><div style="margin-bottom:1.5rem"><h3 style="color:#0078d4;margin-bottom:0.25rem">August 2026</h3><p></p><p>All user complete the transition to the Chebyshev.</p><p></p></div></div>]]></content:encoded>
+            <category>recruit</category>
+            <category>Linux</category>
+            <category>AI</category>
+            <category>GPGPU</category>
+            <category>USBC</category>
+        </item>
         <item>
             <title><![CDATA[Join Us]]></title>
             <link>https://bayes-cluster.github.io/blog/join-us</link>
