@@ -13,7 +13,6 @@ const config = {
   title: 'First Generation High Performance Computing Cluster in BNU-HKBU UIC',
   tagline: 'and we call it Bayes Cluster',
   favicon: 'img/favicon.ico',
-
   // Set the production url of your site here
   url: 'https://bayes-cluster.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -73,6 +72,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -88,7 +92,17 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'researchSidebar',
+            position: 'left',
+            label: 'Research',
+          },
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left',
+          },
           {
             href: 'https://hpc.uicstat.com',
             label: '😭 Web Portal',
