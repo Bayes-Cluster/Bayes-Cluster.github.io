@@ -29,4 +29,4 @@ Kubeflow uses Keycloak as its Identity Provider to handle user authentication vi
 6. Using the ID token, Kubeflow identifies the user and creates a session.
 7. The user gains access to Kubeflow’s dashboard and services based on their permissions.
 
-Further usage of kubeflow, please follow [kubeflow](./kubeflow.md)
+Further usage of kubeflow, please follow [kubeflow](./kubeflow/kubeflow.md)
