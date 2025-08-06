@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # NoteBook
@@ -20,13 +20,13 @@ Kubeflow Notebooks provides a way to run web-based development environments insi
 2. Select a Namespace: 
     * Click the namespace dropdown to see the list of available namespaces.
     * Choose the namespace that corresponds to your Kubeflow Profile. 
-        <img src="https://www.kubeflow.org/docs/images/notebooks-namespace.png" alt="Notbooks Namespace" heigh="120"/>
+        <img src="https://www.kubeflow.org/docs/images/notebooks-namespace.png" alt="Notbooks Namespace" height="300"/>
 
 3. Click `Notebook Servers` in the left-hand panel:
-    <img src="https://www.kubeflow.org/docs/images/jupyterlink.png" alt="Jupyter Link" heigh="120"/>
+    <img src="https://www.kubeflow.org/docs/images/jupyterlink.png" alt="Jupyter Link" height="300"/>
 
 4. Click `New Server` on the `Notebook Servers` page:
-    <img src="https://www.kubeflow.org/docs/images/add-notebook-server.png" alt="Add Notebook Server" heigh="120"/>
+    <img src="https://www.kubeflow.org/docs/images/add-notebook-server.png" alt="Add Notebook Server" height="300"/>
 
 5. Enter a “Name” for your notebook server.
     * The name can include letters and numbers, but <u>no spaces</u>.
@@ -68,7 +68,7 @@ Kubeflow Notebooks provides a way to run web-based development environments insi
             * RTX 3080
             * RTX 4090 (recommended for most use cases)
     
-    <img src="https://32cf906.webp.li/2025/08/kubeflow-configuration.png" alt="EKubeflow Configuration" heigh="120"/>
+    <img src="https://e4ac516.webp.ee/2025/08/kubeflow-configuration.png" alt="EKubeflow Configuration" height="300"/>
 
 
 14. Click `LAUNCH` to create a new Notebook CRD with your specified settings.

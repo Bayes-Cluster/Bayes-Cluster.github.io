@@ -8,11 +8,11 @@ sidebar_position: 1
 
 For the user who logs into Kubeflow for the first time, you may see the pop-up window below:
 
-<img src="https://www.kubeflow.org/docs/images/dashboard/auto-profile-step-1.png" alt="Example banner" heigh="200"/>
+<img src="https://www.kubeflow.org/docs/images/dashboard/auto-profile-step-1.png" alt="Example banner" height="300"/>
 
 Click the button with `Start Setup` and type the name you want:
 
-<img src="https://www.kubeflow.org/docs/images/dashboard/auto-profile-step-2.png" alt="Example banner" heigh="200"/>
+<img src="https://www.kubeflow.org/docs/images/dashboard/auto-profile-step-2.png" alt="Example banner" height="300"/>
 
 :::tip
 We highly recommend using your username as the name of your Namespace. This helps keep your resources organized and easily identifiable within the cluster.

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Tensorboards and Volumes
@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Click on the Tensorboards tab in the left-hand menu of the Central Dashboard.
 
-<img src="https://mlops-for-all.github.io/en/assets/images/left-tabs-4290df638df45a698ebc615a5bcb5b86.png" alt="Kubeflow Left Tab" heigh="120"/>
+<img src="https://mlops-for-all.github.io/en/assets/images/left-tabs-4290df638df45a698ebc615a5bcb5b86.png" alt="Kubeflow Left Tab" height="300"/>
 
 The TensorBoard server created in this way can be used just like a regular remote TensorBoard server. It can also be connected to Kubeflow Pipelines to automatically visualize training logs or metrics stored in shared volumes.
 
@@ -16,15 +16,13 @@ The TensorBoard server created in this way can be used just like a regular remot
 
 Next, click on the Volumes tab in the left-hand menu of the Central Dashboard.
 
-<img src="https://mlops-for-all.github.io/en/assets/images/left-tabs-4290df638df45a698ebc615a5bcb5b86.png" alt="Kubeflow Left Tab" heigh="120"/>
+<img src="https://mlops-for-all.github.io/en/assets/images/left-tabs-4290df638df45a698ebc615a5bcb5b86.png" alt="Kubeflow Left Tab" height="300"/>
 
 You will see the following screen.
 
-<img src="https://mlops-for-all.github.io/en/assets/images/volumes-8a47fc94771470514efa705ec8b6d0fe.png" alt="Kubeflow Volumes" heigh="120"/>
+<img src="https://mlops-for-all.github.io/en/assets/images/volumes-8a47fc94771470514efa705ec8b6d0fe.png" alt="Kubeflow Volumes" height="300"/>
 
 Volumes tab provides the functionality to manage the Persistent Volume Claims (PVC) belonging to the current user's namespace in Kubernetes' Volume (Volume).
-
-By looking at the screenshot, you can see the information of the Volume created on the 1. Notebooks page. It can be seen that the Storage Class of the Volume is set `juicefs-sc`, which is the Default Storage Class installed at the time of Kubernetes cluster installation.
 
 In addition, the Volumes page can be used if you want to create, view, or delete a new Volume in the user namespace.
 
@@ -39,7 +37,7 @@ The created volume can be mounted on multiple containers, however it depends on 
 
 By clicking the `+ NEW VOLUME` button at the top right, you can see the following screen.
 
-<img src="https://mlops-for-all.github.io/en/assets/images/new-volume-b14c633d4f22b7948f111122da491ccd.png" alt="Kubeflow Create Volumes" heigh="120"/>
+<img src="https://mlops-for-all.github.io/en/assets/images/new-volume-b14c633d4f22b7948f111122da491ccd.png" alt="Kubeflow Create Volumes" height="300"/>
 
 You can create a volume by specifying its name, size, ~~storage class~~, and access mode.
 
@@ -124,7 +122,7 @@ If you no longer need a volume:
 2. Go to the Tensorboards tab and click [New TensorBoard]. 
     * Fill in the required information on the New Tensorboard screen, then click [Create].
     * Choose the PVC that mounted on the home directory
-    <img src="https://32cf906.webp.li/2025/08/kubeflow-tensorboard.png" alt="Kubeflow Tensorboard" heigh="120"/>
+    <img src="https://e4ac516.webp.ee/2025/08/kubeflow-tensorboard.png" alt="Kubeflow Tensorboard" height="300"/>
 
 
 3. After TensorBoard is created, it will appear in the list of active boards.
